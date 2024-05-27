@@ -1,11 +1,8 @@
-import customtkinter as ctk
-from gui.main_window import MainWindow
+from gui.main_gui import MainGUI
 
 
 def main():
-    app = ctk.CTk()
-    main_window = MainWindow(app)
-    main_window.pack(fill="both", expand=True)
+    app = MainGUI()
     app.mainloop()
 
 
