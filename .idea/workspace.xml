@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Updated structure for PEP 8">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Added Logo, Scale, Appearance" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +33,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2h1OdVtYVRxLgYagJr3YhxGDzld" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +47,8 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/AustinATTS/OneDrive/Documents/IT Work/Unit 4 - Programming/Part B &amp; C/college_event_score_system&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.platform.ide.impl.presentationAssistant.PresentationAssistantConfigurable&quot;
   }
 }</component>
   <component name="RunManager">
@@ -122,7 +123,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716802146689</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated structure for PEP 8">
+      <option name="closed" value="true" />
+      <created>1716845631708</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716845631708</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated Fonts For Nav Buttons">
+      <option name="closed" value="true" />
+      <created>1716846018708</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716846018708</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Logo, Scale, Appearance">
+      <option name="closed" value="true" />
+      <created>1716848674825</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716848674825</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +166,8 @@
     <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Added Navigation Bar And Functions" />
     <MESSAGE value="Updated structure for PEP 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated structure for PEP 8" />
+    <MESSAGE value="Updated Fonts For Nav Buttons" />
+    <MESSAGE value="Added Logo, Scale, Appearance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Logo, Scale, Appearance" />
   </component>
 </project>

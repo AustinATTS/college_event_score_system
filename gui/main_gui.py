@@ -29,7 +29,7 @@ class MainGUI(ctk.CTk):
 
         self.logo = load_image("assets/images/logo.ico", size=(26, 26))
         self.logo_label = ctk.CTkLabel(self.navigation_frame, text="  College Event ScoreSystem", image=self.logo,
-                                       compound="left")
+                                       compound="left", font=header)
         self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
 
         self.score_entry_button = ctk.CTkButton(self.navigation_frame, corner_radius=0, height=40, border_spacing=10,
