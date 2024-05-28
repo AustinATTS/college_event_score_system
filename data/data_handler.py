@@ -8,22 +8,31 @@ def create_table():
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS scores (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            participant_name TEXT NOT NULL,
-            event_name TEXT NOT NULL,
-            score INTEGER NOT NULL
+            individual_id INTEGER NOT NULL,
+            individual_name TEXT NOT NULL,
+            event_one_name TEXT NOT NULL,
+            event_one_rank INTEGER NOT NULL,
+            event_two_name TEXT NOT NULL,
+            event_two_rank INTEGER NOT NULL,
+            event_three_name TEXT NOT NULL,
+            event_three_rank INTEGER NOT NULL,
+            event_four_name TEXT NOT NULL,
+            event_four_rank INTEGER NOT NULL,
+            event_five_name TEXT NOT NULL,
+            event_five_rank INTEGER NOT NULL
         )
     ''')
     conn.commit()
     conn.close()
 
 
-def insert_score(participant_name, event_name, score):
+def insert_score(individual_id, individual_name, event_one_name, event_one_rank, event_two_name, event_two_rank, event_three_name, event_three_rank, event_four_name, event_four_rank, event_five_name, event_five_rank):
     conn = sqlite3.connect(DATABASE_PATH)
     cursor = conn.cursor()
     cursor.execute('''
-        INSERT INTO scores (participant_name, event_name, score)
-        VALUES (?, ?, ?)
-    ''', (participant_name, event_name, score))
+        INSERT INTO scores (individual_id, individual_name, event_one_name, event_one_rank, event_two_name, event_two_rank, event_three_name, event_three_rank, event_four_name, event_four_rank, event_five_name, event_five_rank)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (individual_id, individual_name, event_one_name, event_one_rank, event_two_name, event_two_rank, event_three_name, event_three_rank, event_four_name, event_four_rank, event_five_name, event_five_rank))
     conn.commit()
     conn.close()
 

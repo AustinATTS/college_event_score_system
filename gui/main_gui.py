@@ -68,21 +68,9 @@ class MainGUI(ctk.CTk):
 
         self.event_directory = EventDirectory(self)
 
-        self.label = ctk.CTkLabel(self, text="College Event Score System", font=header)
-
-        self.clear_button = ctk.CTkButton(self, text="Clear Scores", command=self.clear_scores)
-
-        self.load_data()
-
+        self.select_page("score_entry")
         self.appearance.set("Light")
         self.scaling.set("100%")
-
-    def load_data(self):
-        self.score_board.update_scores()
-
-    def clear_scores(self):
-        clear_scores()
-        self.load_data()
 
     def select_page(self, name):
         self.score_entry_button.configure(fg_color=("grey75", "grey25") if name == "score_entry" else "transparent")
