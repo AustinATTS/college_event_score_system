@@ -79,17 +79,17 @@ class MainGUI(ctk.CTk):
         else "transparent")
 
         if name == "score_entry":
-            self.score_entry.grid(row=0, column=1, sticky="nsew")
+            self.score_entry.grid(row=0, rowspan=100, column=1, sticky="nsew")
         else:
             self.score_entry.grid_forget()
 
         if name == "score_board":
-            self.score_board.grid(row=0, column=1, sticky="nsew")
+            self.score_board.grid(row=0, rowspan=100, column=1, sticky="nsew")
         else:
             self.score_board.grid_forget()
 
         if name == "event_directory":
-            self.event_directory.grid(row=0, column=1, sticky="nsew")
+            self.event_directory.grid(row=0, rowspan=100, column=1, sticky="nsew")
         else:
             self.event_directory.grid_forget()
 
