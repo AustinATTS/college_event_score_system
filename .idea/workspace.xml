@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Updated score_entry and data_handler for correct data submission">
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Added all entry and combo boxes for score_entry.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/score_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_entry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo.ico" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +43,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AustinATTS/OneDrive/Documents/IT Work/Unit 4 - Programming/Part B &amp; C/college_event_score_system&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.platform.ide.impl.presentationAssistant.PresentationAssistantConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/AustinATTS/OneDrive/Documents/IT Work/Unit 4 - Programming/Part B & C/college_event_score_system",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "com.intellij.platform.ide.impl.presentationAssistant.PresentationAssistantConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="College Event Score System" />
@@ -168,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716928924023</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added all entry and combo boxes for score_entry.py">
+      <option name="closed" value="true" />
+      <created>1716939672634</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716939672634</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +190,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added Logo (file)" />
     <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Added Navigation Bar And Functions" />
@@ -191,6 +199,7 @@
     <MESSAGE value="Added Logo, Scale, Appearance" />
     <MESSAGE value="Finished Navigation (Added Logo Font)" />
     <MESSAGE value="Updated score_entry and data_handler for correct data submission" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated score_entry and data_handler for correct data submission" />
+    <MESSAGE value="Added all entry and combo boxes for score_entry.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all entry and combo boxes for score_entry.py" />
   </component>
 </project>
