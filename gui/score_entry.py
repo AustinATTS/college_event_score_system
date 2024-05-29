@@ -8,7 +8,7 @@ class ScoreEntry(ctk.CTkFrame):
 
         self.configure(corner_radius=0, fg_color=("#CCCCCC", "#333333"))
 
-        self.participant_type = ctk.CTkTabview(self, width=250, segmented_button_selected_color=("#0097F7", "#F76000"))
+        self.participant_type = ctk.CTkTabview(self, width=250, segmented_button_selected_color=("#0097F7", "#F76000"), segmented_button_selected_hover_color=("#0068AB", "#AB4200"), segmented_button_unselected_color=("#CCCCCC", "#333333"), segmented_button_unselected_hover_color=("#A6A6A6", "#0D0D0D"), segmented_button_fg_color=("#CCCCCC", "#333333"))
         self.participant_type.grid(row=0, column=0, padx=(20, 0), pady=(20, 0), sticky="nsew")
 
         self.participant_type.add("Individual")
@@ -25,7 +25,7 @@ class ScoreEntry(ctk.CTkFrame):
         self.event_one_name_entry = ctk.CTkEntry(self.participant_type.tab("Individual"), placeholder_text="Event Name")
         self.event_one_name_entry.grid(row=2, column=0, padx=20, pady=(10, 10))
         self.event_one_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                       values=["Academic", "Sporting"])
+                                                       values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_one_type_combobox.grid(row=3, column=0, padx=20, pady=(10, 10))
         self.event_one_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"), placeholder_text="Score")
         self.event_one_rank_entry.grid(row=4, column=0, padx=20, pady=(10, 10))
@@ -33,7 +33,7 @@ class ScoreEntry(ctk.CTkFrame):
         self.event_two_name_entry = ctk.CTkEntry(self.participant_type.tab("Individual"), placeholder_text="Event Name")
         self.event_two_name_entry.grid(row=5, column=0, padx=20, pady=(10, 10))
         self.event_two_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                       values=["Academic", "Sporting"])
+                                                       values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_two_type_combobox.grid(row=6, column=0, padx=20, pady=(10, 20))
         self.event_two_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"), placeholder_text="Score")
         self.event_two_rank_entry.grid(row=0, column=1, padx=20, pady=(20, 10))
@@ -42,7 +42,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                    placeholder_text="Event Name")
         self.event_three_name_entry.grid(row=1, column=1, padx=20, pady=(10, 10))
         self.event_three_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                       values=["Academic", "Sporting"])
+                                                       values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_three_type_combobox.grid(row=2, column=1, padx=20, pady=(10, 10))
         self.event_three_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"), placeholder_text="Score")
         self.event_three_rank_entry.grid(row=3, column=1, padx=20, pady=(10, 10))
@@ -51,7 +51,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                   placeholder_text="Event Name")
         self.event_four_name_entry.grid(row=4, column=1, padx=20, pady=(10, 10))
         self.event_four_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                       values=["Academic", "Sporting"])
+                                                       values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_four_type_combobox.grid(row=5, column=1, padx=20, pady=(10, 10))
         self.event_four_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"), placeholder_text="Score")
         self.event_four_rank_entry.grid(row=6, column=1, padx=20, pady=(10, 20))
@@ -60,7 +60,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                   placeholder_text="Event Name")
         self.event_five_name_entry.grid(row=0, column=2, padx=20, pady=(20, 10))
         self.event_five_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                       values=["Academic", "Sporting"])
+                                                       values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_five_type_combobox.grid(row=1, column=2, padx=20, pady=(10, 10))
         self.event_five_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"), placeholder_text="Score")
         self.event_five_rank_entry.grid(row=2, column=2, padx=20, pady=(10, 10))
@@ -94,7 +94,7 @@ class ScoreEntry(ctk.CTkFrame):
         self.event_one_name_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Event Name")
         self.event_one_name_entry.grid(row=0, column=1, padx=20, pady=(20, 10))
         self.event_one_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                       values=["Academic", "Sporting"])
+                                                       values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_one_type_combobox.grid(row=1, column=1, padx=20, pady=(10, 10))
         self.event_one_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score")
         self.event_one_rank_entry.grid(row=2, column=1, padx=20, pady=(10, 10))
@@ -102,7 +102,7 @@ class ScoreEntry(ctk.CTkFrame):
         self.event_two_name_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Event Name")
         self.event_two_name_entry.grid(row=3, column=1, padx=20, pady=(10, 10))
         self.event_two_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                       values=["Academic", "Sporting"])
+                                                       values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_two_type_combobox.grid(row=4, column=1, padx=20, pady=(10, 10))
         self.event_two_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score")
         self.event_two_rank_entry.grid(row=5, column=1, padx=20, pady=(10, 10))
@@ -111,7 +111,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                    placeholder_text="Event Name")
         self.event_three_name_entry.grid(row=6, column=1, padx=20, pady=(10, 20))
         self.event_three_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                         values=["Academic", "Sporting"])
+                                                         values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_three_type_combobox.grid(row=0, column=2, padx=20, pady=(20, 10))
         self.event_three_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score")
         self.event_three_rank_entry.grid(row=1, column=2, padx=20, pady=(10, 10))
@@ -120,7 +120,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                   placeholder_text="Event Name")
         self.event_four_name_entry.grid(row=2, column=2, padx=20, pady=(10, 10))
         self.event_four_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                        values=["Academic", "Sporting"])
+                                                        values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_four_type_combobox.grid(row=3, column=2, padx=20, pady=(10, 10))
         self.event_four_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score")
         self.event_four_rank_entry.grid(row=4, column=2, padx=20, pady=(10, 10))
@@ -129,7 +129,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                   placeholder_text="Event Name")
         self.event_five_name_entry.grid(row=5, column=2, padx=20, pady=(10, 10))
         self.event_five_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                        values=["Academic", "Sporting"])
+                                                        values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.event_five_type_combobox.grid(row=6, column=2, padx=20, pady=(10, 20))
         self.event_five_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score")
         self.event_five_rank_entry.grid(row=0, column=3, padx=20, pady=(20, 10))
@@ -138,7 +138,7 @@ class ScoreEntry(ctk.CTkFrame):
                                            command=self.submit_score, fg_color=("#0097F7", "#F76000"), hover_color=("#0068AB", "#AB4200"))
         self.submit_button.grid(row=7, column=0, columnspan=4, padx=20, pady=(10, 20))
 
-        self.solo_participant_type = ctk.CTkTabview(self, width=250, segmented_button_selected_color=("#0097F7", "#F76000"))
+        self.solo_participant_type = ctk.CTkTabview(self, width=250, segmented_button_selected_color=("#0097F7", "#F76000"), segmented_button_selected_hover_color=("#0068AB", "#AB4200"), segmented_button_unselected_color=("#CCCCCC", "#333333"), segmented_button_unselected_hover_color=("#A6A6A6", "#0D0D0D"), segmented_button_fg_color=("#CCCCCC", "#333333"))
         self.solo_participant_type.grid(row=0, column=1, padx=(20, 20), pady=(20, 0), sticky="nsew")
 
         self.solo_participant_type.add("Individual")
@@ -156,7 +156,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                   placeholder_text="Event Name")
         self.solo_event_name_entry.grid(row=2, column=0, padx=20, pady=(10, 10))
         self.solo_event_type_combobox = ctk.CTkComboBox(self.solo_participant_type.tab("Individual"),
-                                                        values=["Academic", "Sporting"])
+                                                        values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.solo_event_type_combobox.grid(row=3, column=0, padx=20, pady=(10, 10))
         self.solo_event_rank_entry = ctk.CTkEntry(self.solo_participant_type.tab("Individual"),
                                                   placeholder_text="Score")
@@ -192,13 +192,13 @@ class ScoreEntry(ctk.CTkFrame):
                                                       placeholder_text="Event Name")
         self.solo_event_one_name_entry.grid(row=0, column=1, padx=20, pady=(20, 10))
         self.solo_event_type_combobox = ctk.CTkComboBox(self.solo_participant_type.tab("Team"),
-                                                        values=["Academic", "Sporting"])
+                                                        values=["Academic", "Sporting"], button_color=("#A6A6A6", "#0D0D0D"), button_hover_color=("#808080", "#000000"))
         self.solo_event_type_combobox.grid(row=1, column=1, padx=20, pady=(10, 10))
         self.solo_event_one_rank_entry = ctk.CTkEntry(self.solo_participant_type.tab("Team"), placeholder_text="Score")
         self.solo_event_one_rank_entry.grid(row=2, column=1, padx=20, pady=(10, 10))
 
         self.solo_submit_button = ctk.CTkButton(self.solo_participant_type.tab("Team"), text="Submit",
-                                                command=self.submit_score, fg_color=("#0097F7", "#F76000"), hover_color=("#0068AB", "#AB4200"))
+                                                command=self.submit_score, fg_color=("#0097F7", "#F76000"), hover_color=("#0068AB", "#ab4200"))
         self.solo_submit_button.grid(row=7, column=0, columnspan=2, padx=20, pady=(10, 20))
 
     def submit_score(self):

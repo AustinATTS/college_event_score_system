@@ -53,12 +53,12 @@ class MainGUI(ctk.CTk):
         self.appearance_label = ctk.CTkLabel(self.navigation_frame, text="Appearance Mode:", anchor="w", font=header)
         self.appearance_label.grid(row=5, column=0, padx=20, pady=(10, 0))
         self.appearance = ctk.CTkOptionMenu(self.navigation_frame, font=header, values=["Light", "Dark", "System"],
-                                            command=change_appearance_event, fg_color=("#0097F7", "#F76000"), button_color=("#0068AB", "#AB4200"))
+                                            command=change_appearance_event, fg_color=("#0097F7", "#F76000"), button_color=("#0068AB", "#AB4200"), button_hover_color=("#00395F", "#5F2400"))
         self.appearance.grid(row=6, column=0, padx=20, pady=(10, 10), sticky="s")
         self.scaling_label = ctk.CTkLabel(self.navigation_frame, text="UI Scaling:", font=header, anchor="w")
         self.scaling_label.grid(row=7, column=0, padx=20, pady=(10, 0))
         self.scaling = ctk.CTkOptionMenu(self.navigation_frame, font=header, values=["80%", "90%", "100%", "110%", "120%"],
-                                         command=change_scaling_event, fg_color=("#0097F7", "#F76000"), button_color=("#0068AB", "#AB4200"))
+                                         command=change_scaling_event, fg_color=("#0097F7", "#F76000"), button_color=("#0068AB", "#AB4200"), button_hover_color=("#00395F", "#5F2400"))
         self.scaling.grid(row=8, column=0, padx=20, pady=(10, 20), sticky="s")
 
         self.score_entry = ScoreEntry(self)
