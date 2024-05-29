@@ -6,7 +6,9 @@ class ScoreEntry(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(parent)
 
-        self.participant_type = ctk.CTkTabview(self, width=250)
+        self.configure(corner_radius=0, fg_color=("#CCCCCC", "#333333"))
+
+        self.participant_type = ctk.CTkTabview(self, width=250, segmented_button_selected_color=("#0097F7", "#F76000"))
         self.participant_type.grid(row=0, column=0, padx=(20, 0), pady=(20, 0), sticky="nsew")
 
         self.participant_type.add("Individual")
@@ -64,7 +66,7 @@ class ScoreEntry(ctk.CTkFrame):
         self.event_five_rank_entry.grid(row=2, column=2, padx=20, pady=(10, 10))
 
         self.submit_button = ctk.CTkButton(self.participant_type.tab("Individual"), text="Submit",
-                                           command=self.submit_score)
+                                           command=self.submit_score, fg_color=("#0097F7", "#F76000"), hover_color=("#0068AB", "#AB4200"))
         self.submit_button.grid(row=7, column=0, columnspan=3, padx=20, pady=(10, 20))
 
         self.team_id_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Team ID")
@@ -133,10 +135,10 @@ class ScoreEntry(ctk.CTkFrame):
         self.event_five_rank_entry.grid(row=0, column=3, padx=20, pady=(20, 10))
 
         self.submit_button = ctk.CTkButton(self.participant_type.tab("Team"), text="Submit",
-                                           command=self.submit_score)
+                                           command=self.submit_score, fg_color=("#0097F7", "#F76000"), hover_color=("#0068AB", "#AB4200"))
         self.submit_button.grid(row=7, column=0, columnspan=4, padx=20, pady=(10, 20))
 
-        self.solo_participant_type = ctk.CTkTabview(self, width=250)
+        self.solo_participant_type = ctk.CTkTabview(self, width=250, segmented_button_selected_color=("#0097F7", "#F76000"))
         self.solo_participant_type.grid(row=0, column=1, padx=(20, 20), pady=(20, 0), sticky="nsew")
 
         self.solo_participant_type.add("Individual")
@@ -161,7 +163,7 @@ class ScoreEntry(ctk.CTkFrame):
         self.solo_event_rank_entry.grid(row=4, column=0, padx=20, pady=(10, 20))
 
         self.solo_submit_button = ctk.CTkButton(self.solo_participant_type.tab("Individual"), text="Submit",
-                                           command=self.submit_score)
+                                           command=self.submit_score, fg_color=("#0097F7", "#F76000"), hover_color=("#0068AB", "#AB4200"))
         self.solo_submit_button.grid(row=7, column=0, padx=20, pady=(10, 20))
 
         self.solo_team_id_entry = ctk.CTkEntry(self.solo_participant_type.tab("Team"), placeholder_text="Team ID")
@@ -196,7 +198,7 @@ class ScoreEntry(ctk.CTkFrame):
         self.solo_event_one_rank_entry.grid(row=2, column=1, padx=20, pady=(10, 10))
 
         self.solo_submit_button = ctk.CTkButton(self.solo_participant_type.tab("Team"), text="Submit",
-                                                command=self.submit_score)
+                                                command=self.submit_score, fg_color=("#0097F7", "#F76000"), hover_color=("#0068AB", "#AB4200"))
         self.solo_submit_button.grid(row=7, column=0, columnspan=2, padx=20, pady=(10, 20))
 
     def submit_score(self):

@@ -6,7 +6,7 @@ class ScoreBoard(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(parent)
 
-        self.configure(corner_radius=0, fg_color="transparent")
+        self.configure(corner_radius=0, fg_color=("#CCCCCC", "#333333"))
 
         self.label = ctk.CTkLabel(self, text="Scores")
         self.label.grid(row=0, column=0)
