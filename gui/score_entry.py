@@ -318,15 +318,15 @@ class ScoreEntry(ctk.CTkFrame):
         solo_particpant_tab = self.solo_participant_type.get()
 
         if participant_tab == "Individual" and solo_particpant_tab == "Individual":
-            SCREEN_SIZE = f"{1100}x{580}"
+            SCREEN_SIZE = f"{1100}x{500}"
 
         if participant_tab == "Individual" and solo_particpant_tab == "Team":
-            SCREEN_SIZE = f"{1230}x{580}"
+            SCREEN_SIZE = f"{1230}x{500}"
 
         if participant_tab == "Team" and solo_particpant_tab == "Individual":
-            SCREEN_SIZE = f"{1280}x{580}"
+            SCREEN_SIZE = f"{1280}x{500}"
 
         if participant_tab == "Team" and solo_particpant_tab == "Team":
-            SCREEN_SIZE = f"{1400}x{580}"
+            SCREEN_SIZE = f"{1400}x{450}"
 
         gui.main_gui.MainGUI.screen_update(self.master, SCREEN_SIZE)

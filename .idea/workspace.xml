@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="updated submit_score function for pep8">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/score_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_entry.py" afterDir="false" />
-    </list>
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Rearranged score_entry.py to look nicer, increasing size and changing colour of the submit button.&#10;&#10;Updated data_handler.py for pep8" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +27,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -217,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717086859416</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Rearranged score_entry.py to look nicer, increasing size and changing colour of the submit button.&#10;&#10;Updated data_handler.py for pep8">
+      <option name="closed" value="true" />
+      <created>1717106218654</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717106218654</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,6 +250,7 @@
     <MESSAGE value="more COLOUR additions" />
     <MESSAGE value="Updated fonts for score_entry.py&#10;Added screen updating functions for different participant types" />
     <MESSAGE value="updated submit_score function for pep8" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated submit_score function for pep8" />
+    <MESSAGE value="Rearranged score_entry.py to look nicer, increasing size and changing colour of the submit button.&#10;&#10;Updated data_handler.py for pep8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rearranged score_entry.py to look nicer, increasing size and changing colour of the submit button.&#10;&#10;Updated data_handler.py for pep8" />
   </component>
 </project>
