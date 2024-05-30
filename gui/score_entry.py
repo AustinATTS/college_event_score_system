@@ -22,7 +22,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                segmented_button_fg_color=("#CCCCCC", "#333333"))
         self.participant_type.grid(row=0, column=0, padx=(20, 0), pady=(20, 0), sticky="nsew")
 
-        self.participant_type.add("Individual",)
+        self.participant_type.add("Individual", )
         self.participant_type.add("Team")
 
         self.individual_id_entry = ctk.CTkEntry(self.participant_type.tab("Individual"),
@@ -273,8 +273,26 @@ class ScoreEntry(ctk.CTkFrame):
         event_four_rank = self.event_four_rank_entry.get()
         event_five_name = self.event_five_name_entry.get()
         event_five_rank = self.event_five_rank_entry.get()
-        if (individual_id and individual_name and event_one_name and event_one_rank and event_two_name and event_two_rank and event_three_name and event_three_rank and event_four_name and event_four_rank and event_five_name and event_five_rank):
-            insert_score(individual_id, individual_name, event_one_name, int(event_one_rank), event_two_name, int(event_two_rank), event_three_name, int(event_three_rank), event_four_name, int(event_four_rank), event_five_name, int(event_five_rank))
+
+        if (individual_id and individual_name and event_one_name and event_one_rank and event_two_name
+                and event_two_rank and event_three_name and event_three_rank and event_four_name and event_four_rank
+                and event_five_name and event_five_rank):
+            
+            insert_score(
+                individual_id,
+                individual_name,
+                event_one_name,
+                int(event_one_rank),
+                event_two_name,
+                int(event_two_rank),
+                event_three_name,
+                int(event_three_rank),
+                event_four_name,
+                int(event_four_rank),
+                event_five_name,
+                int(event_five_rank)
+            )
+
             self.individual_id_entry.delete(0, 'end')
             self.individual_name_entry.delete(0, 'end')
             self.event_one_name_entry.delete(0, 'end')
