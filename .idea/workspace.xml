@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Updated fonts for score_entry.py&#10;Added screen updating functions for different participant types">
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="updated submit_score function for pep8">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/score_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_entry.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717086483740</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="updated submit_score function for pep8">
+      <option name="closed" value="true" />
+      <created>1717086859416</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717086859416</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +246,7 @@
     <MESSAGE value="Added COLOURS for light and dark modes" />
     <MESSAGE value="more COLOUR additions" />
     <MESSAGE value="Updated fonts for score_entry.py&#10;Added screen updating functions for different participant types" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated fonts for score_entry.py&#10;Added screen updating functions for different participant types" />
+    <MESSAGE value="updated submit_score function for pep8" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated submit_score function for pep8" />
   </component>
 </project>

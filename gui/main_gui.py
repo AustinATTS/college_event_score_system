@@ -27,7 +27,7 @@ class MainGUI(ctk.CTk):
         self.navigation_frame.rowconfigure(4, weight=1)
 
         self.logo = load_image("assets/images/banner.png", size=(200, 50))
-        self.logo_label = ctk.CTkLabel(self.navigation_frame, text="", image=self.logo, compound="left", font=header)
+        self.logo_label = ctk.CTkLabel(self.navigation_frame, text="", image=self.logo, compound="left", font=header,)
         self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
 
         self.score_entry_button = ctk.CTkButton(self.navigation_frame, corner_radius=0, height=40, border_spacing=10,
@@ -79,15 +79,15 @@ class MainGUI(ctk.CTk):
         if name == "score_entry":
             self.score_entry_button.configure(fg_color=("grey75", "grey25"))
         else:
-            "transparent"
+            self.score_entry_button.configure(fg_color="transparent")
         if name == "score_board":
             self.score_board_button.configure(fg_color=("grey75", "grey25"))
         else:
-            "transparent"
+            self.score_board_button.configure("transparent")
         if name == "event_directory":
             self.event_directory_button.configure(fg_color=("grey75", "grey25"))
         else:
-            "transparent"
+            self.event_directory_button.configure("transparent")
 
         if name == "score_entry":
             self.score_entry.grid(row=0, rowspan=100, column=1, sticky="nsew")

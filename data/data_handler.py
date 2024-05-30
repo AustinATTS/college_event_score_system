@@ -26,13 +26,54 @@ def create_table():
     conn.close()
 
 
-def insert_score(individual_id, individual_name, event_one_name, event_one_rank, event_two_name, event_two_rank, event_three_name, event_three_rank, event_four_name, event_four_rank, event_five_name, event_five_rank):
+def insert_score(
+        individual_id,
+        individual_name,
+        event_one_name,
+        event_one_rank,
+        event_two_name,
+        event_two_rank,
+        event_three_name,
+        event_three_rank,
+        event_four_name,
+        event_four_rank,
+        event_five_name,
+        event_five_rank
+):
+
     conn = sqlite3.connect(DATABASE_PATH)
     cursor = conn.cursor()
     cursor.execute('''
-        INSERT INTO scores (individual_id, individual_name, event_one_name, event_one_rank, event_two_name, event_two_rank, event_three_name, event_three_rank, event_four_name, event_four_rank, event_five_name, event_five_rank)
+        INSERT INTO scores (
+            individual_id,
+            individual_name,
+            event_one_name,
+            event_one_rank,
+            event_two_name,
+            event_two_rank,
+            event_three_name,
+            event_three_rank,
+            event_four_name,
+            event_four_rank,
+            event_five_name,
+            event_five_rank
+        )
+
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ''', (individual_id, individual_name, event_one_name, event_one_rank, event_two_name, event_two_rank, event_three_name, event_three_rank, event_four_name, event_four_rank, event_five_name, event_five_rank))
+    ''', (
+            individual_id,
+            individual_name,
+            event_one_name,
+            event_one_rank,
+            event_two_name,
+            event_two_rank,
+            event_three_name,
+            event_three_rank,
+            event_four_name,
+            event_four_rank,
+            event_five_name,
+            event_five_rank)
+                )
     conn.commit()
     conn.close()
 
