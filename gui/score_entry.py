@@ -1,7 +1,7 @@
 import customtkinter as ctk
 from utils.custom_font import CustomFont
 import gui.main_gui
-from data.data_handler import insert_score
+from data.multiple_data_handler import insert_score
 from config.config import SCREEN_SIZE
 
 
