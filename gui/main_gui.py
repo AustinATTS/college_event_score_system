@@ -77,32 +77,25 @@ class MainGUI(ctk.CTk):
 
     def select_page(self, name):
         if name == "score_entry":
+            self.score_entry.grid(row=0, rowspan=100, column=1, sticky="nsew")
             self.score_entry_button.configure(fg_color=("grey75", "grey25"))
         else:
-            self.score_entry_button.configure(fg_color="transparent")
-        if name == "score_board":
-            self.score_board_button.configure(fg_color=("grey75", "grey25"))
-        else:
-            self.score_board_button.configure("transparent")
-        if name == "event_directory":
-            self.event_directory_button.configure(fg_color=("grey75", "grey25"))
-        else:
-            self.event_directory_button.configure("transparent")
-
-        if name == "score_entry":
-            self.score_entry.grid(row=0, rowspan=100, column=1, sticky="nsew")
-        else:
             self.score_entry.grid_forget()
+            self.score_entry_button.configure(fg_color="transparent")
 
         if name == "score_board":
             self.score_board.grid(row=0, rowspan=100, column=1, sticky="nsew")
+            self.score_board_button.configure(fg_color=("grey75", "grey25"))
         else:
             self.score_board.grid_forget()
+            self.score_board_button.configure(fg_color="transparent")
 
         if name == "event_directory":
             self.event_directory.grid(row=0, rowspan=100, column=1, sticky="nsew")
+            self.event_directory_button.configure(fg_color=("grey75", "grey25"))
         else:
             self.event_directory.grid_forget()
+            self.event_directory_button.configure(fg_color="transparent")
 
     def score_entry_button_event(self):
         self.select_page("score_entry")
