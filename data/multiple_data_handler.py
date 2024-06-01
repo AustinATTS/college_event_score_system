@@ -45,7 +45,7 @@ def insert_score(participant_type, individual_id, individual_name, team_id, team
     cursor = conn.cursor()
     cursor.execute('''
         INSERT INTO scores (participant_type, individual_id, individual_name, team_id, team_name, team_member_one, team_member_two, team_member_three, team_member_four, team_member_five, event_one_name, event_one_type, event_one_rank, event_two_name, event_two_type, event_two_rank, event_three_name, event_three_type, event_three_rank, event_four_name, event_four_type, event_four_rank, event_five_name, event_five_type, event_five_rank)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ''', (participant_type, individual_id, individual_name, team_id, team_name, team_member_one, team_member_two, team_member_three, team_member_four, team_member_five, event_one_name, event_one_type, event_one_rank, event_two_name, event_two_type, event_two_rank, event_three_name, event_three_type, event_three_rank, event_four_name, event_four_type, event_four_rank, event_five_name, event_five_type, event_five_rank))
     conn.commit()
     conn.close()

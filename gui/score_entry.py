@@ -392,6 +392,7 @@ class ScoreEntry(ctk.CTkFrame):
             self.team_member_three_entry.delete(0, 'end')
             self.team_member_four_entry.delete(0, 'end')
             self.team_member_four_entry.delete(0, 'end')
+            self.team_member_five_entry.delete(0, 'end')
             self.team_event_one_name_entry.delete(0, 'end')
             self.team_event_one_type_combobox.set('Academic')
             self.team_event_one_rank_entry.delete(0, 'end')
@@ -405,7 +406,7 @@ class ScoreEntry(ctk.CTkFrame):
             self.team_event_four_type_combobox.set('Academic')
             self.team_event_four_rank_entry.delete(0, 'end')
             self.team_event_five_name_entry.delete(0, 'end')
-            self.team_event_five_type_combobox.set('Academic98')
+            self.team_event_five_type_combobox.set('Academic')
             self.team_event_five_rank_entry.delete(0, 'end')
             self.master.score_board.multiple_update_scores()
 

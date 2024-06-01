@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="created data_handler for solo events">
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Updated score entry and data handling functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/multiple_data_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/multiple_data_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/solo_data_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/solo_data_handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/score_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_entry.py" afterDir="false" />
@@ -258,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717113418475</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Updated score entry and data handling functions">
+      <option name="closed" value="true" />
+      <created>1717202103590</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1717202103590</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,6 +302,7 @@
     <MESSAGE value="updated most of data handling&#10;&#10;added type to entry names to fix tuple issue" />
     <MESSAGE value="Fixed tuple error (, in the variable definintion for team)" />
     <MESSAGE value="created data_handler for solo events" />
-    <option name="LAST_COMMIT_MESSAGE" value="created data_handler for solo events" />
+    <MESSAGE value="Updated score entry and data handling functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated score entry and data handling functions" />
   </component>
 </project>

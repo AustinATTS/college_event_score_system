@@ -8,7 +8,7 @@ def solo_create_table():
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS solo_scores (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            particiapnt_type TEXT,
+            participant_type TEXT,
             individual_id INTEGER,
             individual_name TEXT,
             team_id INTEGER,

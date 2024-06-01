@@ -32,20 +32,20 @@ class MainGUI(ctk.CTk):
 
         self.score_entry_button = ctk.CTkButton(self.navigation_frame, corner_radius=0, height=40, border_spacing=10,
                                                 font=header, text="Score Entry", fg_color="transparent",
-                                                text_color=("#333333", "#CCCCCC"), hover_color=("#A6A6A6", "#0D0D0D"),
+                                                text_color=("#333333", "#CCCCCC"), hover_color=("#808080", "#000000"),
                                                 anchor="w", command=self.score_entry_button_event)
         self.score_entry_button.grid(row=1, column=0, sticky="ew", padx=20, pady=10)
 
         self.score_board_button = ctk.CTkButton(self.navigation_frame, corner_radius=0, height=40, border_spacing=10,
                                                 font=header, text="Score Board", fg_color="transparent",
-                                                text_color=("#333333", "#CCCCCC"), hover_color=("#A6A6A6", "#0D0D0D"),
+                                                text_color=("#333333", "#CCCCCC"), hover_color=("#808080", "#000000"),
                                                 anchor="w", command=self.score_board_button_event)
         self.score_board_button.grid(row=2, column=0, sticky="ew", padx=20, pady=10)
 
         self.event_directory_button = ctk.CTkButton(self.navigation_frame, corner_radius=0, height=40, font=header,
                                                     border_spacing=10, text="Event Directory", fg_color="transparent",
                                                     text_color=("#333333", "#CCCCCC"),
-                                                    hover_color=("#A6A6A6", "#0D0D0D"), anchor="w",
+                                                    hover_color=("#808080", "#000000"), anchor="w",
                                                     command=self.event_directory_button_event)
         self.event_directory_button.grid(row=3, column=0, sticky="ew", padx=20, pady=10)
 
@@ -78,21 +78,21 @@ class MainGUI(ctk.CTk):
     def select_page(self, name):
         if name == "score_entry":
             self.score_entry.grid(row=0, rowspan=100, column=1, sticky="nsew")
-            self.score_entry_button.configure(fg_color=("grey75", "grey25"))
+            self.score_entry_button.configure(fg_color=("#A6A6A6", "#0D0D0D"))
         else:
             self.score_entry.grid_forget()
             self.score_entry_button.configure(fg_color="transparent")
 
         if name == "score_board":
             self.score_board.grid(row=0, rowspan=100, column=1, sticky="nsew")
-            self.score_board_button.configure(fg_color=("grey75", "grey25"))
+            self.score_board_button.configure(fg_color=("#A6A6A6", "#0D0D0D"))
         else:
             self.score_board.grid_forget()
             self.score_board_button.configure(fg_color="transparent")
 
         if name == "event_directory":
             self.event_directory.grid(row=0, rowspan=100, column=1, sticky="nsew")
-            self.event_directory_button.configure(fg_color=("grey75", "grey25"))
+            self.event_directory_button.configure(fg_color=("#A6A6A6", "#0D0D0D"))
         else:
             self.event_directory.grid_forget()
             self.event_directory_button.configure(fg_color="transparent")
