@@ -43,20 +43,20 @@ class ScoreBoard(ctk.CTkFrame):
                           f"{score[11]} - {score[12]}; {str(score[13])}",
                           f"{score[14]} - {score[15]}; {str(score[16])}",
                           f"{score[17]} - {score[18]}; {str(score[19])}",
-                          f"{score[21]} - {score[21]}; {str(score[22])}",
+                          f"{score[20]} - {score[21]}; {str(score[22])}",
                           f"{score[23]} - {score[24]}; {str(score[25])}"]
-                self.entries = ctk.CTkComboBox(self.multiple_events, values=values)
-                self.entries.grid(row=score[0], column=0, padx=20, pady=(20, 10))
+                self.entries = ctk.CTkOptionMenu(self.multiple_events, values=values, button_hover_color=("#0097F7", "#F76000"), button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
+                self.entries.grid(row=score[0], column=0, padx=20, pady=(10, 10))
             elif score[1] == "Team":
                 values = [f"{str(score[4])} - {score[5]}",
                           f"{score[6]} - {score[7]} - {score[8]} - {score[9]} - {score[10]}",
                           f"{score[11]} - {score[12]}; {str(score[13])}",
                           f"{score[14]} - {score[15]}; {str(score[16])}",
                           f"{score[17]} - {score[18]}; {str(score[19])}",
-                          f"{score[21]} - {score[21]}; {str(score[22])}",
+                          f"{score[20]} - {score[21]}; {str(score[22])}",
                           f"{score[23]} - {score[24]}; {str(score[25])}"]
-                entries = ctk.CTkComboBox(self.multiple_events, values=values)
-                entries.grid(row=score[0], column=0, padx=20, pady=(20, 10))
+                entries = ctk.CTkOptionMenu(self.multiple_events, values=values, button_hover_color=("#0097F7", "#F76000"), button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
+                entries.grid(row=score[0], column=0, padx=20, pady=(10, 10))
             else:
                 print(f"What the fuck have you done")
 
@@ -74,14 +74,14 @@ class ScoreBoard(ctk.CTkFrame):
             if solo_score[1] == "Individual":
                 values = [f"{str(solo_score[2])} - {solo_score[3]}",
                           f"{solo_score[11]} - {solo_score[12]}; {str(solo_score[13])}"]
-                entries = ctk.CTkComboBox(self.solo_events, values=values)
-                entries.grid(row=solo_score[0], column=0, padx=20, pady=(20, 10))
+                entries = ctk.CTkOptionMenu(self.solo_events, values=values, button_hover_color=("#0097F7", "#F76000"), button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
+                entries.grid(row=solo_score[0], column=0, padx=20, pady=(10, 10))
             elif solo_score[1] == "Team":
                 values = [f"{str(solo_score[4])} - {solo_score[5]}",
                           f"{solo_score[6]} - {solo_score[7]} - {solo_score[8]} - {solo_score[9]} - {solo_score[10]}",
                           f"{solo_score[11]} - {solo_score[12]}; {str(solo_score[13])}"]
-                entries = ctk.CTkComboBox(self.solo_events, values=values)
-                entries.grid(row=solo_score[0], column=0, padx=20, pady=(20, 10))
+                entries = ctk.CTkOptionMenu(self.solo_events, values=values, button_hover_color=("#0097F7", "#F76000"), button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
+                entries.grid(row=solo_score[0], column=0, padx=20, pady=(10, 10))
             else:
                 print(f"Solo What the fuck have you done")
 
