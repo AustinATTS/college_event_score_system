@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Updated database.db">
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Updated requirements.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -278,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717279977587</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updated requirements.txt">
+      <option name="closed" value="true" />
+      <created>1717380422999</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717380422999</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,6 +324,7 @@
     <MESSAGE value="Updated score entry and data handling functions" />
     <MESSAGE value="Updated data management and displayed entries as comboboxes" />
     <MESSAGE value="Updated database.db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated database.db" />
+    <MESSAGE value="Updated requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated requirements.txt" />
   </component>
 </project>
