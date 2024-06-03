@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from utils.custom_font import CustomFont
+#from utils.custom_font import CustomFont
 import gui.main_gui
 from data.multiple_data_handler import insert_score
 from data.solo_data_handler import solo_insert_score
@@ -10,9 +10,14 @@ class ScoreEntry(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(parent)
 
-        header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
-        body = CustomFont("assets/fonts/Selawik.ttf", size=14, weight="normal").get_ctk_font()
-        submit = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        #header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        #body = CustomFont("assets/fonts/Selawik.ttf", size=14, weight="normal").get_ctk_font()
+        #submit = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        header = ctk.CTkFont(size=14)
+        body = ctk.CTkFont(size=14)
+        submit = ctk.CTkFont(size=14)
+
+
 
         self.configure(corner_radius=0, fg_color=("#CCCCCC", "#333333"))
 
