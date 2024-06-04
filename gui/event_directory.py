@@ -15,18 +15,67 @@ class EventDirectory(ctk.CTkFrame):
         self.individual_frame = ctk.CTkFrame(self)
         self.individual_frame.grid(row=0, column=1, padx=20, pady=(20, 10))
 
-        self.events_list()
+        self.team_update_list()
+        self.individual_update_list()
 
-    def events_list(self):
+    def team_clear_list(self):
+        clear_scores()
+        solo_clear_scores()
+        self.team_update_list()
+
+    def clear_frame(self, frame):
+        for widget in frame.winfo_children():
+            widget.destroy()
+
+    def individual_clear_list(self):
+        clear_scores()
+        solo_clear_scores()
+        self.individual_update_list()
+
+    def team_update_list(self):
+        self.clear_frame(self.team_frame)
+        self.team_title = ctk.CTkLabel(self.team_frame, text="Team Events")
+        self.team_title.grid(row=0, column=0, padx=20, pady=(20, 10))
+        events = fetch_scores()
         solo_events = solo_fetch_scores()
-        multiple_events = fetch_scores()
-        total_events = solo_events + multiple_events
+        for event in events:
+            if event[1] == "Team":
+                values = []
+                self.entries = ctk.CTkOptionMenu(self.team_frame, values=values,
+                                                 button_hover_color=("#0097F7", "#F76000"),
+                                                 button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
+                self.entries.grid(row=event[0], column=0, padx=20, pady=(10, 10))
+        for solo_event in solo_events:
+            if solo_event[1] == "Team":
+                values = []
+                self.entries = ctk.CTkOptionMenu(self.team_frame, values=values,
+                                                 button_hover_color=("#0097F7", "#F76000"),
+                                                 button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
+                self.entries.grid(row=solo_event[0], column=0, padx=20, pady=(10, 10))
 
-        if total_events[1] == "Team":
-            event = ctk.CTkLabel(self.team_frame, text=f"{total_events[3]}")
-            event.grid(row=total_events[0], column=0, padx=20, pady=(10, 10))
-        elif total_events[1] == "Individual":
-            event = ctk.CTkLabel(self.individual_frame, text=f"{total_events[3]}")
-            event.grid(row=total_events[0], column=0, padx=20, pady=(10, 10))
-        else:
-            print("What The Fuck Has Just Happened Jesus Christ This Shouldnt Be Running Oh God")
+    def individual_update_list(self):
+        self.clear_frame(self.individual_frame)
+        self.individual_title = ctk.CTkLabel(self.individual_frame, text="Individual Events")
+        self.individual_title.grid(row=0, column=0, padx=20, pady=(20, 10))
+        events = fetch_scores()
+        solo_events = solo_fetch_scores()
+        for event in events:
+            if event[1] == "Individual":
+                values = []
+                self.entries = ctk.CTkOptionMenu(self.individual_frame, values=values,
+                                                 button_hover_color=("#0097F7", "#F76000"),
+                                                 button_color=("#0097F7", "#F76000"),
+                                                 fg_color=("#0097F7", "#F76000"))
+                self.entries.grid(row=event[0], column=0, padx=20, pady=(10, 10))
+            else:
+                print("By God What The Fuck Have You Done No God No")
+        for solo_event in solo_events:
+            if solo_event[1] == "Individual":
+                values = []
+                self.entries = ctk.CTkOptionMenu(self.individual_frame, values=values,
+                                                 button_hover_color=("#0097F7", "#F76000"),
+                                                 button_color=("#0097F7", "#F76000"),
+                                                 fg_color=("#0097F7", "#F76000"))
+                self.entries.grid(row=solo_event[0], column=0, padx=20, pady=(10, 10))
+            else:
+                print("By God What The Fuck Have You Done No God No")

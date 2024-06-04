@@ -1,7 +1,6 @@
 import customtkinter as ctk
 from data.multiple_data_handler import fetch_scores, clear_scores
 from data.solo_data_handler import solo_fetch_scores, solo_clear_scores
-from config.config import  SCREEN_SIZE
 
 
 class ScoreBoard(ctk.CTkFrame):
@@ -26,7 +25,6 @@ class ScoreBoard(ctk.CTkFrame):
     def clear_frame(self, frame):
         for widget in frame.winfo_children():
             widget.destroy()
-
 
     def solo_clear_scores(self):
         solo_clear_scores()
@@ -64,7 +62,6 @@ class ScoreBoard(ctk.CTkFrame):
                                                  command=self.multiple_clear_scores)
         self.clear_scores_button.grid(row=2, column=1)
 
-
     def solo_update_scores(self):
         self.clear_frame(self.solo_events)
         self.solo_title = ctk.CTkLabel(self.solo_events, text="ScoreBoard For Solo Events")
@@ -87,4 +84,3 @@ class ScoreBoard(ctk.CTkFrame):
 
         self.solo_clear_Score_button = ctk.CTkButton(self.solo_events, text="Delete", command=self.solo_clear_scores)
         self.solo_clear_Score_button.grid(row=2, column=1)
-
