@@ -15,18 +15,17 @@ class EventDirectory(ctk.CTkFrame):
         self.individual_frame = ctk.CTkFrame(self)
         self.individual_frame.grid(row=0, column=1, padx=20, pady=(20, 10))
 
-        self.events_list()
+   #     self.events_list()
 
-    def events_list(self):
-        solo_events = solo_fetch_scores()
-        multiple_events = fetch_scores()
-        total_events = solo_events + multiple_events
-
-        if total_events[1] == "Team":
-            event = ctk.CTkLabel(self.team_frame, text=f"{total_events[3]}")
-            event.grid(row=total_events[0], column=0, padx=20, pady=(10, 10))
-        elif total_events[1] == "Individual":
-            event = ctk.CTkLabel(self.individual_frame, text=f"{total_events[3]}")
-            event.grid(row=total_events[0], column=0, padx=20, pady=(10, 10))
-        else:
-            print("What The Fuck Has Just Happened Jesus Christ This Shouldnt Be Running Oh God")
+#    def events_list(self):
+ #       solo_events = solo_fetch_scores()
+  #      multiple_events = fetch_scores()
+#
+ #       if total_events[1] == "Team":
+  #          event = ctk.CTkLabel(self.team_frame, text=f"{total_events[3]}")
+   #         event.grid(row=total_events[0], column=0, padx=20, pady=(10, 10))
+    #    elif total_events[1] == "Individual":
+     #       event = ctk.CTkLabel(self.individual_frame, text=f"{total_events[3]}")
+      #      event.grid(row=total_events[0], column=0, padx=20, pady=(10, 10))
+       # else:
+        #    print("What The Fuck Has Just Happened Jesus Christ This Shouldnt Be Running Oh God")
