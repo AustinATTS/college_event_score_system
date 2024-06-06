@@ -15,6 +15,7 @@ class EventDirectory(ctk.CTkFrame):
         self.individual_frame = ctk.CTkFrame(self)
         self.individual_frame.grid(row=0, column=1, padx=20, pady=(20, 10))
 
+        self.events_list()
 
     def events_list(self):
         solo_events = solo_fetch_scores()
