@@ -1,9 +1,9 @@
-class EventManager:
-    def __init__(self):
-        self.events = []
+events = []
+def add_event(event):
+    events.append(event)
 
-    def add_event(self, event):
-        self.events.append(event)
+def get_events():
+    return events
 
-    def get_events(self):
-        return self.events
+def clear_events():
+    events = []

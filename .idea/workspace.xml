@@ -8,8 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/event_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/event_directory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/score_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_entry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/event_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/event_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/error_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/error_handling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
