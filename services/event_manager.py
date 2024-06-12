@@ -5,5 +5,8 @@ def add_event(event):
 def get_events():
     return events
 
-def clear_events():
+def solo_clear_events():
+    events = []
+
+def multiple_clear_events():
     events = []
