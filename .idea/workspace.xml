@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="PEP8" />
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="event directory additions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/event_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/event_directory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/event_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/event_manager.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +32,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -317,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718269440197</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="event directory additions">
+      <option name="closed" value="true" />
+      <created>1718283623760</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1718283623764</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -333,7 +346,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Navigation Bar And Functions" />
     <MESSAGE value="Updated structure for PEP 8" />
     <MESSAGE value="Updated Fonts For Nav Buttons" />
     <MESSAGE value="Added Logo, Scale, Appearance" />
@@ -358,6 +370,7 @@
     <MESSAGE value="Added even more changes to the event directory" />
     <MESSAGE value="Added functionality to update the event_directory.py" />
     <MESSAGE value="PEP8" />
-    <option name="LAST_COMMIT_MESSAGE" value="PEP8" />
+    <MESSAGE value="event directory additions" />
+    <option name="LAST_COMMIT_MESSAGE" value="event directory additions" />
   </component>
 </project>

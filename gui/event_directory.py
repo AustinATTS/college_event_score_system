@@ -38,20 +38,21 @@ class EventDirectory(ctk.CTkFrame):
                 add_event(multiple_event[14], multiple_event[15], multiple_event[5], multiple_event[16])
                 add_event(multiple_event[17], multiple_event[18], multiple_event[5], multiple_event[19])
                 add_event(multiple_event[20], multiple_event[21], multiple_event[5], multiple_event[22])
-                add_event(multiple_event[23], multiple_event[24], multiple_event[5], multiple_event[25])
+                add_event(multiple_event[23], multiple_event[24], multiple_event[5], multiple_event[25]   )
 
         for solo_event in solo_events:
             if solo_event[1] == "Individual":
-                add_event(solo_event[11], solo_events[12], solo_event[3], solo_event[13])
+                add_event(solo_event[11], solo_event[12], solo_event[3], solo_event[13])
             elif solo_event[1] == "Team":
-                add_event(solo_event[11], solo_events[12], solo_event[5], solo_event[13])
+                add_event(solo_event[11], solo_event[12], solo_event[5], solo_event[13])
 
         events = return_events()
 
         position_id = 0
 
         for event in events:
-            values = [event[0], event]
+            value_split = event.split(":", 2)
+            values = [f"{value_split[0]}", f"{value_split[1]}"]
             entry = ctk.CTkOptionMenu(self.event_frame, values=values)
             entry.grid(row=position_id, column=0, padx=20, pady=(20, 10))
             position_id += 1
