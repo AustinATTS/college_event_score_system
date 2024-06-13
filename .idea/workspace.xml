@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Added even more changes to the event directory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/event_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/event_directory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/event_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/event_manager.py" afterDir="false" />
-    </list>
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="PEP8" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,7 +301,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718186526731</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added functionality to update the event_directory.py">
+      <option name="closed" value="true" />
+      <created>1718269234597</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1718269234598</updated>
+    </task>
+    <task id="LOCAL-00028" summary="PEP8">
+      <option name="closed" value="true" />
+      <created>1718269440197</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1718269440197</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -323,8 +333,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Logo (file)" />
-    <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Added Navigation Bar And Functions" />
     <MESSAGE value="Updated structure for PEP 8" />
     <MESSAGE value="Updated Fonts For Nav Buttons" />
@@ -348,6 +356,8 @@
     <MESSAGE value="Updated for use in linux (had to remove font/just hashed it)" />
     <MESSAGE value="Added changes to the event directory" />
     <MESSAGE value="Added even more changes to the event directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added even more changes to the event directory" />
+    <MESSAGE value="Added functionality to update the event_directory.py" />
+    <MESSAGE value="PEP8" />
+    <option name="LAST_COMMIT_MESSAGE" value="PEP8" />
   </component>
 </project>
