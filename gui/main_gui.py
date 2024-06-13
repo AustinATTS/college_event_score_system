@@ -5,7 +5,7 @@ from utils.image_loader import load_image
 from utils.customisation import change_appearance_event, change_scaling_event
 from gui.score_entry import ScoreEntry
 from gui.score_board import ScoreBoard
-from gui.event_directory import EventDirectory, get_events
+from gui.event_directory import EventDirectory
 
 
 class MainGUI(ctk.CTk):
@@ -106,6 +106,8 @@ class MainGUI(ctk.CTk):
 
     def event_directory_button_event(self):
         self.select_page("event_directory")
+        self.event_directory.get_events()
+
 
     def screen_update(self, SCREEN_SIZE):
         self.geometry(SCREEN_SIZE)

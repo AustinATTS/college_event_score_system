@@ -2,11 +2,8 @@ events = []
 def add_event(event):
     events.append(event)
 
-def get_events():
+def return_events():
     return events
 
-def solo_clear_events():
-    events = []
-
-def multiple_clear_events():
-    events = []
+def clear_events():
+    events.clear()

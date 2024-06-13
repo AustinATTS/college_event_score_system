@@ -1,7 +1,7 @@
 import customtkinter as ctk
 from data.multiple_data_handler import fetch_scores
 from data.solo_data_handler import solo_fetch_scores
-from services.event_manager import add_event, multiple_clear_events, solo_clear_events, get_events
+from services.event_manager import add_event, clear_events, return_events
 from config.config import SCREEN_SIZE
 
 
@@ -15,16 +15,6 @@ class EventDirectory(ctk.CTkFrame):
         self.event_frame.grid(row=0, column=0, padx=20, pady=(20, 10))
 
         self.get_events()
-
-    def clear_events(self, button):
-        if button == "multiple":
-            multiple_clear_events()
-
-        elif button == "solo":
-            solo_clear_events()
-
-        self.get_events()
-
 
     def clear_frame(self, frame):
         for widget in frame.winfo_children():
@@ -46,12 +36,12 @@ class EventDirectory(ctk.CTkFrame):
         for solo_event in solo_events:
             add_event(solo_event[11])
 
-        events = get_events()
+        events = return_events()
 
         position_id = 0
 
         for event in events:
-            entry = ctk.CTkLabel(self.event_frame, text=event)
+            values = [event, event]
+            entry = ctk.CTkOptionMenu(self.event_frame, values=values)
             entry.grid(row=position_id, column=0, padx=20, pady=(20, 10))
             position_id += 1
-
