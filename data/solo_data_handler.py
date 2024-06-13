@@ -27,14 +27,50 @@ def solo_create_table():
     conn.close()
 
 
-def solo_insert_score(participant_type, individual_id, individual_name, team_id, team_name, team_member_one, team_member_two, team_member_three, team_member_four, team_member_five, solo_event_name, solo_event_type, solo_event_rank):
+def solo_insert_score(participant_type,
+                      individual_id,
+                      individual_name,
+                      team_id,
+                      team_name,
+                      team_member_one,
+                      team_member_two,
+                      team_member_three,
+                      team_member_four,
+                      team_member_five,
+                      solo_event_name,
+                      solo_event_type,
+                      solo_event_rank):
 
     conn = sqlite3.connect(DATABASE_PATH)
     cursor = conn.cursor()
     cursor.execute('''
-        INSERT INTO solo_scores (participant_type, individual_id, individual_name, team_id, team_name, team_member_one, team_member_two, team_member_three, team_member_four, team_member_five, solo_event_name, solo_event_type, solo_event_rank)
+        INSERT INTO solo_scores (participant_type,
+                                 individual_id,
+                                 individual_name,
+                                 team_id,
+                                 team_name,
+                                 team_member_one,
+                                 team_member_two,
+                                 team_member_three,
+                                 team_member_four,
+                                 team_member_five,
+                                 solo_event_name,
+                                 solo_event_type,
+                                 solo_event_rank)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ''', (participant_type, individual_id, individual_name, team_id, team_name, team_member_one, team_member_two, team_member_three, team_member_four, team_member_five, solo_event_name, solo_event_type, solo_event_rank))
+    ''', (participant_type,
+                     individual_id,
+                     individual_name,
+                     team_id,
+                     team_name,
+                     team_member_one,
+                     team_member_two,
+                     team_member_three,
+                     team_member_four,
+                     team_member_five,
+                     solo_event_name,
+                     solo_event_type,
+                     solo_event_rank))
     conn.commit()
     conn.close()
 

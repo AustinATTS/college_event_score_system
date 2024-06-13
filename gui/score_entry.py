@@ -103,7 +103,7 @@ class ScoreEntry(ctk.CTkFrame):
 
         self.submit_button = ctk.CTkButton(self.participant_type.tab("Individual"), text="Submit",
                                            command=self.submit_score, fg_color=("#0097F7", "#F76000"),
-                                           hover_color=("#0068AB", "#AB4200"), font=header, height=68, width=499)
+                                           hover_color=("#0068AB", "#AB4200"), font=submit, height=68, width=499)
         self.submit_button.grid(row=6, column=0, columnspan=3, padx=20, pady=(10, 20))
 
         self.team_id_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Team ID", font=body)
@@ -190,7 +190,7 @@ class ScoreEntry(ctk.CTkFrame):
 
         self.submit_button = ctk.CTkButton(self.participant_type.tab("Team"), text="Submit", command=self.submit_score,
                                            fg_color=("#0097F7", "#F76000"), hover_color=("#0068AB", "#AB4200"),
-                                           font=header, height=174)
+                                           font=submit, height=174)
         self.submit_button.grid(row=3, column=3, rowspan=4, padx=20, pady=(10, 20))
 
         self.solo_participant_type = ctk.CTkTabview(self, width=250, command=self.update_screen_event,
@@ -231,7 +231,7 @@ class ScoreEntry(ctk.CTkFrame):
 
         self.solo_submit_button = ctk.CTkButton(self.solo_participant_type.tab("Individual"), text="Submit",
                                                 command=self.solo_submit_score, fg_color=("#0097F7", "#F76000"),
-                                                hover_color=("#0068AB", "#AB4200"), font=header, width=194, height=72)
+                                                hover_color=("#0068AB", "#AB4200"), font=submit, width=194, height=72)
         self.solo_submit_button.grid(row=7, column=0, columnspan=2, padx=20, pady=(10, 20))
 
         self.solo_team_id_entry = ctk.CTkEntry(self.solo_participant_type.tab("Team"), placeholder_text="Team ID",
@@ -272,7 +272,7 @@ class ScoreEntry(ctk.CTkFrame):
 
         self.solo_submit_button = ctk.CTkButton(self.solo_participant_type.tab("Team"), text="Submit",
                                                 command=self.solo_submit_score, fg_color=("#0097F7", "#F76000"),
-                                                hover_color=("#0068AB", "#ab4200"), font=header, height=174)
+                                                hover_color=("#0068AB", "#ab4200"), font=submit, height=174)
         self.solo_submit_button.grid(row=3, column=1, rowspan=4, padx=20, pady=(10, 20))
 
     def solo_submit_score(self):
@@ -304,7 +304,19 @@ class ScoreEntry(ctk.CTkFrame):
             self.master.score_board.solo_update_scores()
 
         if team_id and team_name and team_member_one and team_member_two and team_member_three and team_member_four and team_member_five and solo_team_event_name and solo_team_event_type and solo_team_event_rank:
-            solo_insert_score(participant_type, individual_id, individual_name, team_id, team_name, team_member_one, team_member_two, team_member_three, team_member_four, team_member_five, solo_team_event_name, solo_team_event_type, solo_team_event_rank)
+            solo_insert_score(participant_type,
+                              individual_id,
+                              individual_name,
+                              team_id,
+                              team_name,
+                              team_member_one,
+                              team_member_two,
+                              team_member_three,
+                              team_member_four,
+                              team_member_five,
+                              solo_team_event_name,
+                              solo_team_event_type,
+                              solo_team_event_rank)
 
             self.solo_team_id_entry.delete(0, 'end')
             self.solo_team_name_entry.delete(0, 'end')
@@ -365,7 +377,31 @@ class ScoreEntry(ctk.CTkFrame):
                 and individual_event_four_name and individual_event_four_type and individual_event_four_rank and individual_event_five_name and individual_event_five_type
                 and individual_event_five_rank):
 
-            insert_score(participant_type, individual_id, individual_name, team_id, team_name, team_member_one, team_member_two, team_member_three, team_member_four, team_member_five, individual_event_one_name, individual_event_one_type, int(individual_event_one_rank), individual_event_two_name, individual_event_two_type, int(individual_event_two_rank), individual_event_three_name, individual_event_three_type, int(individual_event_three_rank), individual_event_four_name, individual_event_four_type, int(individual_event_four_rank), individual_event_five_name, individual_event_five_type, int(individual_event_five_rank))
+            insert_score(participant_type,
+                         individual_id,
+                         individual_name,
+                         team_id,
+                         team_name,
+                         team_member_one,
+                         team_member_two,
+                         team_member_three,
+                         team_member_four,
+                         team_member_five,
+                         individual_event_one_name,
+                         individual_event_one_type,
+                         int(individual_event_one_rank),
+                         individual_event_two_name,
+                         individual_event_two_type,
+                         int(individual_event_two_rank),
+                         individual_event_three_name,
+                         individual_event_three_type,
+                         int(individual_event_three_rank),
+                         individual_event_four_name,
+                         individual_event_four_type,
+                         int(individual_event_four_rank),
+                         individual_event_five_name,
+                         individual_event_five_type,
+                         int(individual_event_five_rank))
 
             self.individual_id_entry.delete(0, 'end')
             self.individual_name_entry.delete(0, 'end')
@@ -392,7 +428,31 @@ class ScoreEntry(ctk.CTkFrame):
                 and team_event_four_name and team_event_four_type and team_event_four_rank and team_event_five_name and team_event_five_type
                 and team_event_five_rank):
 
-            insert_score(participant_type, individual_id, individual_name, team_id, team_name, team_member_one, team_member_two, team_member_three, team_member_four, team_member_five, team_event_one_name, team_event_one_type, int(team_event_one_rank), team_event_two_name, team_event_two_type, int(team_event_two_rank), team_event_three_name, team_event_three_type, int(team_event_three_rank), team_event_four_name, team_event_four_type, int(team_event_four_rank), team_event_five_name, team_event_five_type, int(team_event_five_rank))
+            insert_score(participant_type,
+                         individual_id,
+                         individual_name,
+                         team_id,
+                         team_name,
+                         team_member_one,
+                         team_member_two,
+                         team_member_three,
+                         team_member_four,
+                         team_member_five,
+                         team_event_one_name,
+                         team_event_one_type,
+                         int(team_event_one_rank),
+                         team_event_two_name,
+                         team_event_two_type,
+                         int(team_event_two_rank),
+                         team_event_three_name,
+                         team_event_three_type,
+                         int(team_event_three_rank),
+                         team_event_four_name,
+                         team_event_four_type,
+                         int(team_event_four_rank),
+                         team_event_five_name,
+                         team_event_five_type,
+                         int(team_event_five_rank))
 
             self.team_id_entry.delete(0, 'end')
             self.team_name_entry.delete(0, 'end')
