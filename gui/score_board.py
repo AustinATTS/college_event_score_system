@@ -48,6 +48,7 @@ class ScoreBoard(ctk.CTkFrame):
                                                  button_hover_color=("#0097F7", "#F76000"),
                                                  button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 self.entries.grid(row=score[0], column=0, padx=20, pady=(10, 10))
+
             elif score[1] == "Team":
                 values = [f"{str(score[4])} - {score[5]}",
                           f"{score[6]} - {score[7]} - {score[8]} - {score[9]} - {score[10]}",
@@ -60,6 +61,7 @@ class ScoreBoard(ctk.CTkFrame):
                                             button_hover_color=("#0097F7", "#F76000"),
                                             button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 entries.grid(row=score[0], column=0, padx=20, pady=(10, 10))
+
             else:
                 print(f"What the fuck have you done")
 
@@ -79,6 +81,7 @@ class ScoreBoard(ctk.CTkFrame):
                 entries = ctk.CTkOptionMenu(self.solo_events, values=values, button_hover_color=("#0097F7", "#F76000"),
                                             button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 entries.grid(row=solo_score[0], column=0, padx=20, pady=(10, 10))
+
             elif solo_score[1] == "Team":
                 values = [f"{str(solo_score[4])} - {solo_score[5]}",
                           f"{solo_score[6]} - {solo_score[7]} - {solo_score[8]} - {solo_score[9]} - {solo_score[10]}",
@@ -86,6 +89,7 @@ class ScoreBoard(ctk.CTkFrame):
                 entries = ctk.CTkOptionMenu(self.solo_events, values=values, button_hover_color=("#0097F7", "#F76000"),
                                             button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 entries.grid(row=solo_score[0], column=0, padx=20, pady=(10, 10))
+
             else:
                 print(f"Solo What the fuck have you done")
 
