@@ -27,6 +27,7 @@ class EventDirectory(ctk.CTkFrame):
         solo_events = solo_fetch_scores()
 
         for multiple_event in multiple_events:
+
             if multiple_event[1] == "Individual":
                 add_event(multiple_event[11], multiple_event[12], multiple_event[3], multiple_event[13])
                 add_event(multiple_event[14], multiple_event[15], multiple_event[3], multiple_event[16])
@@ -48,11 +49,17 @@ class EventDirectory(ctk.CTkFrame):
 
         events = return_events()
 
+        event_dict = {}
+        for event in events:
+            event_name, event_data = event.split(" - ", 1)
+            event_type, participant_score = event_data.split(" : ", 1)
+            if event_name not in event_dict:
+                event_dict[event_name] = [f"{event_name} - {event_type}"]
+            event_dict[event_name].append(participant_score)
+
         position_id = 0
 
-        for event in events:
-            value_split = event.split(":", 2)
-            values = [f"{value_split[0]}", f"{value_split[1]}"]
-            entry = ctk.CTkOptionMenu(self.event_frame, values=values)
+        for event_name, event_values in event_dict.items():
+            entry = ctk.CTkOptionMenu(self.event_frame, values=event_values)
             entry.grid(row=position_id, column=0, padx=20, pady=(20, 10))
             position_id += 1
