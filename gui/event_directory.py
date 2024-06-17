@@ -62,6 +62,7 @@ class EventDirectory(ctk.CTkFrame):
         position_id = 0
 
         for event_name, event_values in event_dict.items():
-            entry = ctk.CTkOptionMenu(self.event_frame, values=event_values)
+            entry = ctk.CTkOptionMenu(self.event_frame, values=event_values, button_hover_color=("#0097F7", "#F76000"),
+                                      button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
             entry.grid(row=position_id, column=0, padx=20, pady=(20, 10))
             position_id += 1

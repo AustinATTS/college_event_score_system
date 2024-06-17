@@ -10,7 +10,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/event_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/event_directory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/score_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_entry.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/austinatts/PycharmProjects/venv&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/austinatts/venv/1&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
