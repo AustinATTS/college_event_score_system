@@ -102,14 +102,18 @@ class MainGUI(ctk.CTk):
             self.event_directory_button.configure(fg_color="transparent")
 
     def score_entry_button_event(self):
+        self.score_entry.update_screen_event()
         self.select_page("score_entry")
 
     def score_board_button_event(self):
         self.select_page("score_board")
+        SCREEN_SIZE = f"{1100}x{500}"
+        self.screen_update(SCREEN_SIZE)
 
     def event_directory_button_event(self):
         self.select_page("event_directory")
-        self.event_directory.get_events()
+        SCREEN_SIZE = f"{1100}x{500}"
+        self.screen_update(SCREEN_SIZE)
 
     def screen_update(self, SCREEN_SIZE):
         self.geometry(SCREEN_SIZE)

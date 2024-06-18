@@ -70,7 +70,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                                     values=["Academic", "Sporting"],
                                                                     button_color=("#A6A6A6", "#0D0D0D"),
                                                                     button_hover_color=("#808080", "#000000"),
-                                                                    ont=body)
+                                                                    font=body)
         self.individual_event_three_type_combobox.grid(row=4, column=1, padx=20, pady=(10, 10))
         self.individual_event_three_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"),
                                                               placeholder_text="Score", font=body)

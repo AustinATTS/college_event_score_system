@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="xml">
-      <change beforePath="$PROJECT_DIR$/.idea/College Event Score System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/College Event Score System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Basic PEP8 Formating">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/event_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/event_directory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/score_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_entry.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -333,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718283623764</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Basic PEP8 Formating">
+      <option name="closed" value="true" />
+      <created>1718613629079</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1718613629079</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,7 +354,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated Fonts For Nav Buttons" />
     <MESSAGE value="Added Logo, Scale, Appearance" />
     <MESSAGE value="Finished Navigation (Added Logo Font)" />
     <MESSAGE value="Updated score_entry and data_handler for correct data submission" />
@@ -374,6 +378,7 @@
     <MESSAGE value="PEP8" />
     <MESSAGE value="event directory additions" />
     <MESSAGE value="xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml" />
+    <MESSAGE value="Basic PEP8 Formating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic PEP8 Formating" />
   </component>
 </project>
