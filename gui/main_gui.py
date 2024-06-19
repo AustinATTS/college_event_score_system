@@ -1,7 +1,7 @@
 import customtkinter as ctk
 from config.config import SCREEN_SIZE
 from utils.image_loader import load_image
-# from utils.custom_font import CustomFont
+from utils.custom_font import CustomFont
 from utils.customisation import change_appearance_event, change_scaling_event
 from gui.score_entry import ScoreEntry
 from gui.score_board import ScoreBoard
