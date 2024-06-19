@@ -11,13 +11,11 @@ class CustomFont:
         self.font_name = self.load_font()
 
     def load_font(self):
-        # Register the font with pyglet
         font_name = os.path.basename(self.font_path).split('.')[0]
         pyglet.font.add_file(self.font_path)
         return font_name
 
     def get_ctk_font(self):
-        # Map weight to tkinter acceptable values
         weight_map = {
             'normal': 'normal',
             'bold': 'bold'

@@ -4,6 +4,7 @@ import gui.main_gui
 from data.multiple_data_handler import insert_score
 from data.solo_data_handler import solo_insert_score
 from config.config import SCREEN_SIZE
+from services.participant_manager import get_participants
 
 
 class ScoreEntry(ctk.CTkFrame):
@@ -495,6 +496,12 @@ class ScoreEntry(ctk.CTkFrame):
             self.team_event_five_type_combobox.set('Academic')
             self.team_event_five_rank_entry.delete(0, 'end')
             self.master.score_board.multiple_update_scores()
+
+            get_participants()
+
+            if get_participants() == False:
+                self.submit_button.configure(state="disabled")
+                self.solo_submit_button.configure(state="disabled")
 
     def update_screen_event(self):
         participant_tab = self.participant_type.get()
