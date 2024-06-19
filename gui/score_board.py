@@ -48,6 +48,7 @@ class ScoreBoard(ctk.CTkFrame):
                                                  button_hover_color=("#0097F7", "#F76000"),
                                                  button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 self.entries.grid(row=score[0], column=0, padx=20, pady=(10, 10))
+
             elif score[1] == "Team":
                 values = [f"{str(score[4])} - {score[5]}",
                           f"{score[6]} - {score[7]} - {score[8]} - {score[9]} - {score[10]}",
@@ -56,15 +57,16 @@ class ScoreBoard(ctk.CTkFrame):
                           f"{score[17]} - {score[18]}; {str(score[19])}",
                           f"{score[20]} - {score[21]}; {str(score[22])}",
                           f"{score[23]} - {score[24]}; {str(score[25])}"]
-                entries = ctk.CTkOptionMenu(self.multiple_events, values=values,
-                                            button_hover_color=("#0097F7", "#F76000"),
-                                            button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
+                entries = ctk.CTkOptionMenu(self.multiple_events, values=values, fg_color=("#0097F7", "#F76000"),
+                                            hover_color=("#0068AB", "#AB4200"))
                 entries.grid(row=score[0], column=0, padx=20, pady=(10, 10))
+
             else:
                 print(f"What the fuck have you done")
 
         self.clear_scores_button = ctk.CTkButton(self.multiple_events, text="Delete",
-                                                 command=self.multiple_clear_scores)
+                                                 command=self.multiple_clear_scores, fg_color=("#0097F7", "#F76000"),
+                                                 hover_color=("#0068AB", "#AB4200"))
         self.clear_scores_button.grid(row=2, column=1)
 
     def solo_update_scores(self):
@@ -79,6 +81,7 @@ class ScoreBoard(ctk.CTkFrame):
                 entries = ctk.CTkOptionMenu(self.solo_events, values=values, button_hover_color=("#0097F7", "#F76000"),
                                             button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 entries.grid(row=solo_score[0], column=0, padx=20, pady=(10, 10))
+
             elif solo_score[1] == "Team":
                 values = [f"{str(solo_score[4])} - {solo_score[5]}",
                           f"{solo_score[6]} - {solo_score[7]} - {solo_score[8]} - {solo_score[9]} - {solo_score[10]}",
@@ -86,8 +89,11 @@ class ScoreBoard(ctk.CTkFrame):
                 entries = ctk.CTkOptionMenu(self.solo_events, values=values, button_hover_color=("#0097F7", "#F76000"),
                                             button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 entries.grid(row=solo_score[0], column=0, padx=20, pady=(10, 10))
+
             else:
                 print(f"Solo What the fuck have you done")
 
-        self.solo_clear_Score_button = ctk.CTkButton(self.solo_events, text="Delete", command=self.solo_clear_scores)
+        self.solo_clear_Score_button = ctk.CTkButton(self.solo_events, text="Delete", command=self.solo_clear_scores,
+                                                     fg_color=("#0097F7", "#F76000"),
+                                                     hover_color=("#0068AB", "#AB4200"))
         self.solo_clear_Score_button.grid(row=2, column=1)

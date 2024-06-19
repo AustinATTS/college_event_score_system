@@ -80,6 +80,7 @@ class MainGUI(ctk.CTk):
         if name == "score_entry":
             self.score_entry.grid(row=0, rowspan=100, column=1, sticky="nsew")
             self.score_entry_button.configure(fg_color=("#A6A6A6", "#0D0D0D"))
+
         else:
             self.score_entry.grid_forget()
             self.score_entry_button.configure(fg_color="transparent")
@@ -87,6 +88,7 @@ class MainGUI(ctk.CTk):
         if name == "score_board":
             self.score_board.grid(row=0, rowspan=100, column=1, sticky="nsew")
             self.score_board_button.configure(fg_color=("#A6A6A6", "#0D0D0D"))
+
         else:
             self.score_board.grid_forget()
             self.score_board_button.configure(fg_color="transparent")
@@ -94,19 +96,24 @@ class MainGUI(ctk.CTk):
         if name == "event_directory":
             self.event_directory.grid(row=0, rowspan=100, column=1, sticky="nsew")
             self.event_directory_button.configure(fg_color=("#A6A6A6", "#0D0D0D"))
+
         else:
             self.event_directory.grid_forget()
             self.event_directory_button.configure(fg_color="transparent")
 
     def score_entry_button_event(self):
+        self.score_entry.update_screen_event()
         self.select_page("score_entry")
 
     def score_board_button_event(self):
         self.select_page("score_board")
+        SCREEN_SIZE = f"{1100}x{500}"
+        self.screen_update(SCREEN_SIZE)
 
     def event_directory_button_event(self):
         self.select_page("event_directory")
-        self.event_directory.get_events()
+        SCREEN_SIZE = f"{1100}x{500}"
+        self.screen_update(SCREEN_SIZE)
 
     def screen_update(self, SCREEN_SIZE):
         self.geometry(SCREEN_SIZE)

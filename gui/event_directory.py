@@ -27,23 +27,24 @@ class EventDirectory(ctk.CTkFrame):
         solo_events = solo_fetch_scores()
 
         for multiple_event in multiple_events:
-
             if multiple_event[1] == "Individual":
                 add_event(multiple_event[11], multiple_event[12], multiple_event[3], multiple_event[13])
                 add_event(multiple_event[14], multiple_event[15], multiple_event[3], multiple_event[16])
                 add_event(multiple_event[17], multiple_event[18], multiple_event[3], multiple_event[19])
                 add_event(multiple_event[20], multiple_event[21], multiple_event[3], multiple_event[22])
                 add_event(multiple_event[23], multiple_event[24], multiple_event[3], multiple_event[25])
+
             elif multiple_events[1] == "Team":
                 add_event(multiple_event[11], multiple_event[12], multiple_event[5], multiple_event[13])
                 add_event(multiple_event[14], multiple_event[15], multiple_event[5], multiple_event[16])
                 add_event(multiple_event[17], multiple_event[18], multiple_event[5], multiple_event[19])
                 add_event(multiple_event[20], multiple_event[21], multiple_event[5], multiple_event[22])
-                add_event(multiple_event[23], multiple_event[24], multiple_event[5], multiple_event[25]   )
+                add_event(multiple_event[23], multiple_event[24], multiple_event[5], multiple_event[25])
 
         for solo_event in solo_events:
             if solo_event[1] == "Individual":
                 add_event(solo_event[11], solo_event[12], solo_event[3], solo_event[13])
+
             elif solo_event[1] == "Team":
                 add_event(solo_event[11], solo_event[12], solo_event[5], solo_event[13])
 
@@ -55,11 +56,13 @@ class EventDirectory(ctk.CTkFrame):
             event_type, participant_score = event_data.split(" : ", 1)
             if event_name not in event_dict:
                 event_dict[event_name] = [f"{event_name} - {event_type}"]
+
             event_dict[event_name].append(participant_score)
 
         position_id = 0
 
         for event_name, event_values in event_dict.items():
-            entry = ctk.CTkOptionMenu(self.event_frame, values=event_values)
+            entry = ctk.CTkOptionMenu(self.event_frame, values=event_values, button_hover_color=("#0097F7", "#F76000"),
+                                      button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
             entry.grid(row=position_id, column=0, padx=20, pady=(20, 10))
             position_id += 1
