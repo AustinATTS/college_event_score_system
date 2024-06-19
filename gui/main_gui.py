@@ -112,6 +112,7 @@ class MainGUI(ctk.CTk):
 
     def event_directory_button_event(self):
         self.select_page("event_directory")
+        self.event_directory.get_events()
         SCREEN_SIZE = f"{1100}x{500}"
         self.screen_update(SCREEN_SIZE)
 

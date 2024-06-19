@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Updated database.db">
-      <change beforePath="$PROJECT_DIR$/.idea/College Event Score System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/College Event Score System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Basic PEP8 Formating">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/event_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/event_directory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/score_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_entry.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -50,12 +49,13 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AustinATTS/OneDrive/Documents/IT Work/Unit 4 - Programming/Part B &amp; C/college_event_score_system&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/austinatts/venv/1&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.platform.ide.impl.presentationAssistant.PresentationAssistantConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RunManager">
@@ -85,7 +85,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
       </set>
     </attachedChunks>
   </component>
@@ -282,7 +282,63 @@
       <option name="project" value="LOCAL" />
       <updated>1717279977587</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updated for use in linux (had to remove font/just hashed it)">
+      <option name="closed" value="true" />
+      <created>1717386175639</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717386175639</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added changes to the event directory">
+      <option name="closed" value="true" />
+      <created>1718096615084</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1718096615084</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added even more changes to the event directory">
+      <option name="closed" value="true" />
+      <created>1718186526731</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1718186526731</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added functionality to update the event_directory.py">
+      <option name="closed" value="true" />
+      <created>1718269234597</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1718269234598</updated>
+    </task>
+    <task id="LOCAL-00028" summary="PEP8">
+      <option name="closed" value="true" />
+      <created>1718269440197</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1718269440197</updated>
+    </task>
+    <task id="LOCAL-00029" summary="event directory additions">
+      <option name="closed" value="true" />
+      <created>1718283623760</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1718283623764</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Basic PEP8 Formating">
+      <option name="closed" value="true" />
+      <created>1718613629079</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1718613629079</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,11 +354,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Logo (file)" />
-    <MESSAGE value="Update workspace.xml" />
-    <MESSAGE value="Added Navigation Bar And Functions" />
-    <MESSAGE value="Updated structure for PEP 8" />
-    <MESSAGE value="Updated Fonts For Nav Buttons" />
     <MESSAGE value="Added Logo, Scale, Appearance" />
     <MESSAGE value="Finished Navigation (Added Logo Font)" />
     <MESSAGE value="Updated score_entry and data_handler for correct data submission" />
@@ -320,6 +371,14 @@
     <MESSAGE value="Updated score entry and data handling functions" />
     <MESSAGE value="Updated data management and displayed entries as comboboxes" />
     <MESSAGE value="Updated database.db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated database.db" />
+    <MESSAGE value="Updated for use in linux (had to remove font/just hashed it)" />
+    <MESSAGE value="Added changes to the event directory" />
+    <MESSAGE value="Added even more changes to the event directory" />
+    <MESSAGE value="Added functionality to update the event_directory.py" />
+    <MESSAGE value="PEP8" />
+    <MESSAGE value="event directory additions" />
+    <MESSAGE value="xml" />
+    <MESSAGE value="Basic PEP8 Formating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic PEP8 Formating" />
   </component>
 </project>
