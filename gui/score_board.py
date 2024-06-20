@@ -40,19 +40,18 @@ class ScoreBoard(ctk.CTkFrame):
         scores = fetch_scores()
         for score in scores:
             if score[1] == "Individual":
-                values = [f"{str(score[2])} - {score[5]}: {multiple_calculate_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25]))}",
+                values = [f"{str(score[2])} - {score[3]}: {multiple_calculate_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25]))}",
                           f"{score[11]} - {score[12]}; {str(score[13])}",
                           f"{score[14]} - {score[15]}; {str(score[16])}",
                           f"{score[17]} - {score[18]}; {str(score[19])}",
                           f"{score[20]} - {score[21]}; {str(score[22])}",
                           f"{score[23]} - {score[24]}; {str(score[25])}"]
-                self.entries = ctk.CTkOptionMenu(self.multiple_events, values=values,
+                entries = ctk.CTkOptionMenu(self.multiple_events, values=values,
                                                  button_hover_color=("#0097F7", "#F76000"),
                                                  button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 position = 0
                 for i in range(20):
-                    widgets = self.multiple_events.grid_slaves(row=(
-                            multiple_display_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25])) + position), column=0)
+                    widgets = self.multiple_events.grid_slaves(row=(multiple_display_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25])) + position), column=0)
                     if widgets:
                         position += 1
 
@@ -66,8 +65,9 @@ class ScoreBoard(ctk.CTkFrame):
                           f"{score[17]} - {score[18]}; {str(score[19])}",
                           f"{score[20]} - {score[21]}; {str(score[22])}",
                           f"{score[23]} - {score[24]}; {str(score[25])}"]
-                entries = ctk.CTkOptionMenu(self.multiple_events, values=values, fg_color=("#0097F7", "#F76000"),
-                                            hover_color=("#0068AB", "#AB4200"))
+                entries = ctk.CTkOptionMenu(self.multiple_events, values=values,
+                                                 button_hover_color=("#0097F7", "#F76000"),
+                                                 button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 position = 0
                 for i in range(20):
                     widgets = self.multiple_events.grid_slaves(row=(multiple_display_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25])) + position), column=0)
@@ -81,7 +81,7 @@ class ScoreBoard(ctk.CTkFrame):
         self.clear_scores_button = ctk.CTkButton(self.multiple_events, text="Delete",
                                                  command=self.multiple_clear_scores, fg_color=("#0097F7", "#F76000"),
                                                  hover_color=("#0068AB", "#AB4200"))
-        self.clear_scores_button.grid(row=2, column=1)
+        self.clear_scores_button.grid(row=1, column=1)
 
     def solo_update_scores(self):
         self.clear_frame(self.solo_events)
@@ -90,7 +90,7 @@ class ScoreBoard(ctk.CTkFrame):
         solo_scores = solo_fetch_scores()
         for solo_score in solo_scores:
             if solo_score[1] == "Individual":
-                values = [f"{str(solo_score[2])} - {solo_score[5]}: {solo_calculate_score(int(solo_score[13]))}",
+                values = [f"{str(solo_score[2])} - {solo_score[3]}: {solo_calculate_score(int(solo_score[13]))}",
                           f"{solo_score[11]} - {solo_score[12]}; {str(solo_score[13])}"]
                 entries = ctk.CTkOptionMenu(self.solo_events, values=values, button_hover_color=("#0097F7", "#F76000"),
                                             button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
@@ -122,4 +122,4 @@ class ScoreBoard(ctk.CTkFrame):
         self.solo_clear_Score_button = ctk.CTkButton(self.solo_events, text="Delete", command=self.solo_clear_scores,
                                                      fg_color=("#0097F7", "#F76000"),
                                                      hover_color=("#0068AB", "#AB4200"))
-        self.solo_clear_Score_button.grid(row=2, column=1)
+        self.solo_clear_Score_button.grid(row=1, column=1)

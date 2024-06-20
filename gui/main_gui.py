@@ -12,11 +12,12 @@ class MainGUI(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        # header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        header = ctk.CTkFont(size=14, weight="bold")
 
         self.geometry(SCREEN_SIZE)
         self.title("College Event Score System")
-        self.iconbitmap("assets/images/logo.ico")
+        # self.iconbitmap("assets/images/logo.ico")
 
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
