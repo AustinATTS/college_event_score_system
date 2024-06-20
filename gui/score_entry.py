@@ -13,9 +13,12 @@ class ScoreEntry(ctk.CTkFrame):
 
         self.participant_handler = ParticipantHandler()
 
-        header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
-        body = CustomFont("assets/fonts/Selawik.ttf", size=14, weight="normal").get_ctk_font()
-        submit = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        # header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        # body = CustomFont("assets/fonts/Selawik.ttf", size=14, weight="normal").get_ctk_font()
+        # submit = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        header = ctk.CTkFont(size=14, weight="bold")
+        body = ctk.CTkFont(size=14, weight="normal")
+        submit = ctk.CTkFont(size=14, weight="bold")
 
         self.configure(corner_radius=0, fg_color=("#CCCCCC", "#333333"))
 
