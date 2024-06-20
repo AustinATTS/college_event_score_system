@@ -1,22 +1,21 @@
 import customtkinter as ctk
-# from utils.custom_font import CustomFont
+from utils.custom_font import CustomFont
 import gui.main_gui
 from data.multiple_data_handler import insert_score
 from data.solo_data_handler import solo_insert_score
 from config.config import SCREEN_SIZE
-from services.participant_manager import get_participants
+from services.participant_manager import ParticipantHandler
 
 
 class ScoreEntry(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(parent)
 
-        # header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
-        # body = CustomFont("assets/fonts/Selawik.ttf", size=14, weight="normal").get_ctk_font()
-        # submit = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
-        header = ctk.CTkFont(size=14)
-        body = ctk.CTkFont(size=14)
-        submit = ctk.CTkFont(size=14)
+        self.participant_handler = ParticipantHandler()
+
+        header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        body = CustomFont("assets/fonts/Selawik.ttf", size=14, weight="normal").get_ctk_font()
+        submit = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
 
         self.configure(corner_radius=0, fg_color=("#CCCCCC", "#333333"))
 
@@ -346,6 +345,10 @@ class ScoreEntry(ctk.CTkFrame):
             self.solo_team_event_rank_entry.delete(0, 'end')
             self.master.score_board.solo_update_scores()
 
+        validate = self.participant_handler.get_participants()
+        if not validate:
+            self.submit_button.configure(state="disabled")
+
     def submit_score(self):
         participant_type = self.participant_type.get()
         individual_id = self.individual_id_entry.get()
@@ -497,11 +500,9 @@ class ScoreEntry(ctk.CTkFrame):
             self.team_event_five_rank_entry.delete(0, 'end')
             self.master.score_board.multiple_update_scores()
 
-            get_participants()
-
-            if get_participants() == False:
-                self.submit_button.configure(state="disabled")
-                self.solo_submit_button.configure(state="disabled")
+        validate = self.participant_handler.get_participants()
+        if not validate:
+            self.submit_button.configure(state="disabled")
 
     def update_screen_event(self):
         participant_tab = self.participant_type.get()

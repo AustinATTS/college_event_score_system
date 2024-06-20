@@ -11,7 +11,7 @@ class EventDirectory(ctk.CTkFrame):
 
         self.configure(corner_radius=0, fg_color=("#CCCCCC", "#333333"))
 
-        self.event_frame = ctk.CTkScrollableFrame(self, width=760, height=425)
+        self.event_frame = ctk.CTkScrollableFrame(self, width=550, height=425)
         self.event_frame.grid(row=0, column=0, padx=20, pady=(20, 10))
 
         self.get_events()
