@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Added participant management">
-      <change beforePath="$PROJECT_DIR$/.idea/College Event Score System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/College Event Score System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Added example data, and updated known issues.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/score_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_entry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/score_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/score_calculator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718797801178</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added example data, and updated known issues.">
+      <option name="closed" value="true" />
+      <created>1718874340690</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1718874340690</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -389,7 +393,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added all entry and combo boxes for score_entry.py" />
     <MESSAGE value="Created logo and banner and updated gui" />
     <MESSAGE value="Added COLOURS for light and dark modes" />
     <MESSAGE value="more COLOUR additions" />
@@ -414,6 +417,7 @@
     <MESSAGE value="Added the ability for the size of the screen to change when going across different &quot;pages&quot; as well as tabs." />
     <MESSAGE value="Added colour and positional updates" />
     <MESSAGE value="Added participant management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added participant management" />
+    <MESSAGE value="Added example data, and updated known issues." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added example data, and updated known issues." />
   </component>
 </project>

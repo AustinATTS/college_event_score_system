@@ -51,8 +51,7 @@ class ScoreBoard(ctk.CTkFrame):
                                                  button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"))
                 position = 0
                 for i in range(20):
-                    widgets = self.multiple_events.grid_slaves(row=(
-                            multiple_display_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25])) + position), column=0)
+                    widgets = self.multiple_events.grid_slaves(row=(multiple_display_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25])) + position), column=0)
                     if widgets:
                         position += 1
 
