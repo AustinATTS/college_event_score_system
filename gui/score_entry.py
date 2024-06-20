@@ -13,22 +13,14 @@ class ScoreEntry(ctk.CTkFrame):
 
         self.participant_handler = ParticipantHandler()
 
-        # header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
-        # body = CustomFont("assets/fonts/Selawik.ttf", size=14, weight="normal").get_ctk_font()
-        # submit = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
-        header = ctk.CTkFont(size=14, weight="bold")
-        body = ctk.CTkFont(size=14, weight="normal")
-        submit = ctk.CTkFont(size=14, weight="bold")
+        header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        body = CustomFont("assets/fonts/Selawik.ttf", size=14, weight="normal").get_ctk_font()
+        submit = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
+        # header = ctk.CTkFont(size=14, weight="bold")
+        # body = ctk.CTkFont(size=14, weight="normal")
+        # submit = ctk.CTkFont(size=14, weight="bold")
 
-        self.configure(corner_radius=0, fg_color=("#CCCCCC", "#333333"))
-
-        self.participant_type = ctk.CTkTabview(self, width=250, command=self.update_screen_event,
-                                               segmented_button_selected_color=("#0097F7", "#F76000"),
-                                               segmented_button_selected_hover_color=("#0068AB", "#AB4200"),
-                                               segmented_button_unselected_color=("#CCCCCC", "#333333"),
-                                               segmented_button_unselected_hover_color=("#A6A6A6", "#0D0D0D"),
-                                               segmented_button_fg_color=("#CCCCCC", "#333333"),
-                                               text_color=("#333333", "#CCCCCC"))
+        self.participant_type = ctk.CTkTabview(self, width=250, command=self.update_screen_event)
         self.participant_type.grid(row=0, column=0, padx=(20, 0), pady=(20, 0), sticky="nsew")
 
         self.participant_type.add("Individual")
@@ -46,9 +38,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                             placeholder_text="Event Name", font=body)
         self.individual_event_one_name_entry.grid(row=3, column=0, padx=20, pady=(10, 10))
         self.individual_event_one_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                                  values=["Academic", "Sporting"],
-                                                                  button_color=("#A6A6A6", "#0D0D0D"),
-                                                                  button_hover_color=("#808080", "#000000"), font=body)
+                                                                  values=["Academic", "Sporting"], font=body)
         self.individual_event_one_type_combobox.grid(row=4, column=0, padx=20, pady=(10, 10))
         self.individual_event_one_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"),
                                                             placeholder_text="Score", font=body)
@@ -58,9 +48,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                             placeholder_text="Event Name", font=body)
         self.individual_event_two_name_entry.grid(row=0, column=1, padx=20, pady=(20, 10))
         self.individual_event_two_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                                  values=["Academic", "Sporting"],
-                                                                  button_color=("#A6A6A6", "#0D0D0D"),
-                                                                  button_hover_color=("#808080", "#000000"), font=body)
+                                                                  values=["Academic", "Sporting"], font=body)
         self.individual_event_two_type_combobox.grid(row=1, column=1, padx=20, pady=(10, 10))
         self.individual_event_two_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"),
                                                             placeholder_text="Score", font=body)
@@ -70,10 +58,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                               placeholder_text="Event Name", font=body)
         self.individual_event_three_name_entry.grid(row=3, column=1, padx=20, pady=(10, 10))
         self.individual_event_three_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                                    values=["Academic", "Sporting"],
-                                                                    button_color=("#A6A6A6", "#0D0D0D"),
-                                                                    button_hover_color=("#808080", "#000000"),
-                                                                    font=body)
+                                                                    values=["Academic", "Sporting"], font=body)
         self.individual_event_three_type_combobox.grid(row=4, column=1, padx=20, pady=(10, 10))
         self.individual_event_three_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"),
                                                               placeholder_text="Score", font=body)
@@ -83,9 +68,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                              placeholder_text="Event Name", font=body)
         self.individual_event_four_name_entry.grid(row=0, column=2, padx=20, pady=(20, 10))
         self.individual_event_four_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                                   values=["Academic", "Sporting"],
-                                                                   button_color=("#A6A6A6", "#0D0D0D"),
-                                                                   button_hover_color=("#808080", "#000000"), font=body)
+                                                                   values=["Academic", "Sporting"], font=body)
         self.individual_event_four_type_combobox.grid(row=1, column=2, padx=20, pady=(10, 10))
         self.individual_event_four_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"),
                                                              placeholder_text="Score", font=body)
@@ -95,17 +78,14 @@ class ScoreEntry(ctk.CTkFrame):
                                                              placeholder_text="Event Name", font=body)
         self.individual_event_five_name_entry.grid(row=3, column=2, padx=20, pady=(10, 10))
         self.individual_event_five_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Individual"),
-                                                                   values=["Academic", "Sporting"],
-                                                                   button_color=("#A6A6A6", "#0D0D0D"),
-                                                                   button_hover_color=("#808080", "#000000"), font=body)
+                                                                   values=["Academic", "Sporting"], font=body)
         self.individual_event_five_type_combobox.grid(row=4, column=2, padx=20, pady=(10, 10))
         self.individual_event_five_rank_entry = ctk.CTkEntry(self.participant_type.tab("Individual"),
                                                              placeholder_text="Score", font=body)
         self.individual_event_five_rank_entry.grid(row=5, column=2, padx=20, pady=(10, 20))
 
         self.submit_button = ctk.CTkButton(self.participant_type.tab("Individual"), text="Submit",
-                                           command=self.submit_score, fg_color=("#0097F7", "#F76000"),
-                                           hover_color=("#0068AB", "#AB4200"), font=submit, height=68, width=499)
+                                           command=self.submit_score, font=submit, height=68, width=499)
         self.submit_button.grid(row=6, column=0, columnspan=3, padx=20, pady=(10, 20))
 
         self.team_id_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Team ID", font=body)
@@ -134,9 +114,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                       font=body)
         self.team_event_one_name_entry.grid(row=0, column=1, padx=20, pady=(20, 10))
         self.team_event_one_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                            values=["Academic", "Sporting"],
-                                                            button_color=("#A6A6A6", "#0D0D0D"),
-                                                            button_hover_color=("#808080", "#000000"), font=body)
+                                                            values=["Academic", "Sporting"], font=body)
         self.team_event_one_type_combobox.grid(row=1, column=1, padx=20, pady=(10, 10))
         self.team_event_one_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score",
                                                       font=body)
@@ -146,9 +124,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                       font=body)
         self.team_event_two_name_entry.grid(row=3, column=1, padx=20, pady=(10, 10))
         self.team_event_two_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                            values=["Academic", "Sporting"],
-                                                            button_color=("#A6A6A6", "#0D0D0D"),
-                                                            button_hover_color=("#808080", "#000000"), font=body)
+                                                            values=["Academic", "Sporting"], font=body)
         self.team_event_two_type_combobox.grid(row=4, column=1, padx=20, pady=(10, 10))
         self.team_event_two_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score",
                                                       font=body)
@@ -158,9 +134,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                         placeholder_text="Event Name", font=body)
         self.team_event_three_name_entry.grid(row=0, column=2, padx=20, pady=(20, 10))
         self.team_event_three_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                              values=["Academic", "Sporting"],
-                                                              button_color=("#A6A6A6", "#0D0D0D"),
-                                                              button_hover_color=("#808080", "#000000"), font=body)
+                                                              values=["Academic", "Sporting"], font=body)
         self.team_event_three_type_combobox.grid(row=1, column=2, padx=20, pady=(10, 10))
         self.team_event_three_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score",
                                                         font=body)
@@ -170,9 +144,7 @@ class ScoreEntry(ctk.CTkFrame):
                                                        font=body)
         self.team_event_four_name_entry.grid(row=3, column=2, padx=20, pady=(10, 10))
         self.team_event_four_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                             values=["Academic", "Sporting"],
-                                                             button_color=("#A6A6A6", "#0D0D0D"),
-                                                             button_hover_color=("#808080", "#000000"), font=body)
+                                                             values=["Academic", "Sporting"], font=body)
         self.team_event_four_type_combobox.grid(row=4, column=2, padx=20, pady=(10, 10))
         self.team_event_four_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score",
                                                        font=body)
@@ -182,26 +154,17 @@ class ScoreEntry(ctk.CTkFrame):
                                                        font=body)
         self.team_event_five_name_entry.grid(row=0, column=3, padx=20, pady=(20, 10))
         self.team_event_five_type_combobox = ctk.CTkComboBox(self.participant_type.tab("Team"),
-                                                             values=["Academic", "Sporting"],
-                                                             button_color=("#A6A6A6", "#0D0D0D"),
-                                                             button_hover_color=("#808080", "#000000"), font=body)
+                                                             values=["Academic", "Sporting"], font=body)
         self.team_event_five_type_combobox.grid(row=1, column=3, padx=20, pady=(10, 10))
         self.team_event_five_rank_entry = ctk.CTkEntry(self.participant_type.tab("Team"), placeholder_text="Score",
                                                        font=body)
         self.team_event_five_rank_entry.grid(row=2, column=3, padx=20, pady=(10, 10))
 
         self.submit_button = ctk.CTkButton(self.participant_type.tab("Team"), text="Submit", command=self.submit_score,
-                                           fg_color=("#0097F7", "#F76000"), hover_color=("#0068AB", "#AB4200"),
                                            font=submit, height=174)
         self.submit_button.grid(row=3, column=3, rowspan=4, padx=20, pady=(10, 20))
 
-        self.solo_participant_type = ctk.CTkTabview(self, width=250, command=self.update_screen_event,
-                                                    segmented_button_selected_color=("#0097F7", "#F76000"),
-                                                    segmented_button_selected_hover_color=("#0068AB", "#AB4200"),
-                                                    segmented_button_unselected_color=("#CCCCCC", "#333333"),
-                                                    segmented_button_unselected_hover_color=("#A6A6A6", "#0D0D0D"),
-                                                    segmented_button_fg_color=("#CCCCCC", "#333333"),
-                                                    text_color=("#333333", "#CCCCCC"))
+        self.solo_participant_type = ctk.CTkTabview(self, width=250, command=self.update_screen_event)
         self.solo_participant_type.grid(row=0, column=1, padx=(20, 20), pady=(20, 0), sticky="nsew")
 
         self.solo_participant_type.add("Individual")
@@ -223,17 +186,14 @@ class ScoreEntry(ctk.CTkFrame):
                                                              placeholder_text="Event Name", font=body)
         self.solo_individual_event_name_entry.grid(row=3, column=0, padx=(20, 0), pady=(10, 10))
         self.solo_individual_event_type_combobox = ctk.CTkComboBox(self.solo_participant_type.tab("Individual"),
-                                                                   values=["Academic", "Sporting"],
-                                                                   button_color=("#A6A6A6", "#0D0D0D"),
-                                                                   button_hover_color=("#808080", "#000000"), font=body)
+                                                                   values=["Academic", "Sporting"], font=body)
         self.solo_individual_event_type_combobox.grid(row=4, column=0, padx=(20, 0), pady=(10, 10))
         self.solo_individual_event_rank_entry = ctk.CTkEntry(self.solo_participant_type.tab("Individual"),
                                                              placeholder_text="Score", font=body)
         self.solo_individual_event_rank_entry.grid(row=5, column=0, padx=(20, 0), pady=(10, 20))
 
         self.solo_submit_button = ctk.CTkButton(self.solo_participant_type.tab("Individual"), text="Submit",
-                                                command=self.solo_submit_score, fg_color=("#0097F7", "#F76000"),
-                                                hover_color=("#0068AB", "#AB4200"), font=submit, width=194, height=72)
+                                                command=self.solo_submit_score, font=submit, width=194, height=72)
         self.solo_submit_button.grid(row=7, column=0, columnspan=2, padx=20, pady=(10, 20))
 
         self.solo_team_id_entry = ctk.CTkEntry(self.solo_participant_type.tab("Team"), placeholder_text="Team ID",
@@ -264,17 +224,14 @@ class ScoreEntry(ctk.CTkFrame):
                                                        placeholder_text="Event Name", font=body)
         self.solo_team_event_name_entry.grid(row=0, column=1, padx=20, pady=(20, 10))
         self.solo_team_event_type_combobox = ctk.CTkComboBox(self.solo_participant_type.tab("Team"),
-                                                             values=["Academic", "Sporting"],
-                                                             button_color=("#A6A6A6", "#0D0D0D"),
-                                                             button_hover_color=("#808080", "#000000"), font=body)
+                                                             values=["Academic", "Sporting"], font=body)
         self.solo_team_event_type_combobox.grid(row=1, column=1, padx=20, pady=(10, 10))
         self.solo_team_event_rank_entry = ctk.CTkEntry(self.solo_participant_type.tab("Team"), placeholder_text="Score",
                                                        font=body)
         self.solo_team_event_rank_entry.grid(row=2, column=1, padx=20, pady=(10, 10))
 
         self.solo_submit_button = ctk.CTkButton(self.solo_participant_type.tab("Team"), text="Submit",
-                                                command=self.solo_submit_score, fg_color=("#0097F7", "#F76000"),
-                                                hover_color=("#0068AB", "#ab4200"), font=submit, height=174)
+                                                command=self.solo_submit_score, font=submit, height=174)
         self.solo_submit_button.grid(row=3, column=1, rowspan=4, padx=20, pady=(10, 20))
 
     def solo_submit_score(self):

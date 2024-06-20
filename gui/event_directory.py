@@ -9,9 +9,7 @@ class EventDirectory(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(parent)
 
-        self.configure(corner_radius=0, fg_color=("#CCCCCC", "#333333"))
-
-        self.event_frame = ctk.CTkScrollableFrame(self, width=550, height=425)
+        self.event_frame = ctk.CTkScrollableFrame(self, width=800, height=425)
         self.event_frame.grid(row=0, column=0, padx=20, pady=(20, 10))
 
         self.get_events()
@@ -62,9 +60,7 @@ class EventDirectory(ctk.CTkFrame):
         position_id = 0
 
         for event_name, event_values in event_dict.items():
-            entry = ctk.CTkOptionMenu(self.event_frame, values=event_values, button_hover_color=("#0097F7", "#F76000"),
-                                      button_color=("#0097F7", "#F76000"), fg_color=("#0097F7", "#F76000"),
-                                      dropdown_fg_color=("#0097F7", "#F76000"))
+            entry = ctk.CTkOptionMenu(self.event_frame, values=event_values)
             row = position_id // 3
             column = position_id % 3
             entry.grid(row=row, column=column, padx=20, pady=(20, 10))

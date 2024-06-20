@@ -59,18 +59,18 @@ def solo_insert_score(participant_type,
                                  solo_event_rank)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ''', (participant_type,
-                     individual_id,
-                     individual_name,
-                     team_id,
-                     team_name,
-                     team_member_one,
-                     team_member_two,
-                     team_member_three,
-                     team_member_four,
-                     team_member_five,
-                     solo_event_name,
-                     solo_event_type,
-                     solo_event_rank))
+          individual_id,
+          individual_name,
+          team_id,
+          team_name,
+          team_member_one,
+          team_member_two,
+          team_member_three,
+          team_member_four,
+          team_member_five,
+          solo_event_name,
+          solo_event_type,
+          solo_event_rank))
     conn.commit()
     conn.close()
 
