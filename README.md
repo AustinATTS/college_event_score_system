@@ -28,11 +28,7 @@ Visit paypal.me/AustinATTS
 ------------------------------------------------------------------------------------------------------------
 Updates: 
 
-V0.0.1 - Unit-4-Programming was updated *File(s) created - 'readme.md'  
 
-v0.0.2 - reame.md was updated *Section added - 'If you are viewing this because:','To donate:','updates','notes','Terms & Conditions!'
-
-GlobalUpdate - reame.md was updated *Section updated - 'Terms & Conditions!'
 
 
 ------------------------------------------------------------------------------------------------------------
