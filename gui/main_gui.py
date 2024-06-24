@@ -1,4 +1,5 @@
 import customtkinter as ctk
+import tkinter as tk
 from config.config import SCREEN_SIZE
 from utils.image_loader import load_image
 from utils.custom_font import CustomFont
@@ -7,13 +8,11 @@ from gui.score_entry import ScoreEntry
 from gui.score_board import ScoreBoard
 from gui.event_directory import EventDirectory
 
-
 class MainGUI(ctk.CTk):
     def __init__(self):
         super().__init__()
 
         header = CustomFont("assets/fonts/SelawikBold.ttf", size=14, weight="bold").get_ctk_font()
-        # header = ctk.CTkFont(size=14, weight="bold")
         ctk.set_default_color_theme("themes/atts_main.json")
 
         self.geometry(SCREEN_SIZE)
@@ -71,9 +70,23 @@ class MainGUI(ctk.CTk):
         self.scaling.set("100%")
 
     def change_scaling_event(self, values):
-        change_scaling_event(values, self)
+        global page_name
+        current_page = page_name
+        if current_page == "event_directory":
+            self.event_directory.grid_forget()  # Hide EventDirectory before changing scaling
+        change_scaling_event(values)
+        if current_page == "event_directory":
+            self.event_directory.grid(row=0, rowspan=100, column=1, sticky="nsew")  # Show EventDirectory again
+
+    def redraw_event_directory(self):
+        self.event_directory.grid_forget()
+        self.event_directory.destroy()
+        self.event_directory = EventDirectory(self)
+        self.event_directory.grid(row=0, rowspan=100, column=1, sticky="nsew")
 
     def select_page(self, name):
+        global page_name
+        page_name = name
         if name == "score_entry":
             self.score_entry.grid(row=0, rowspan=100, column=1, sticky="nsew")
             self.score_entry_button.configure(fg_color=("#A6A6A6", "#0D0D0D"))
@@ -109,7 +122,6 @@ class MainGUI(ctk.CTk):
 
     def event_directory_button_event(self):
         self.select_page("event_directory")
-        self.event_directory.get_events()
         SCREEN_SIZE = f"{1111}x{500}"
         self.screen_update(SCREEN_SIZE)
 
