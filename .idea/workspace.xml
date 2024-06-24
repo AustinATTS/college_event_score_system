@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="reqs">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/event_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/event_directory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/participant_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/participant_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/customisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/customisation.py" afterDir="false" />
-    </list>
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="scale issues" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -379,7 +370,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718916778180</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="scale issues">
+      <option name="closed" value="true" />
+      <created>1719209589082</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1719209589082</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,7 +394,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added all entry and combo boxes for score_entry.py" />
     <MESSAGE value="Created logo and banner and updated gui" />
     <MESSAGE value="Added COLOURS for light and dark modes" />
     <MESSAGE value="more COLOUR additions" />
@@ -420,6 +418,7 @@
     <MESSAGE value="Simplified looks" />
     <MESSAGE value="exe" />
     <MESSAGE value="reqs" />
-    <option name="LAST_COMMIT_MESSAGE" value="reqs" />
+    <MESSAGE value="scale issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="scale issues" />
   </component>
 </project>
