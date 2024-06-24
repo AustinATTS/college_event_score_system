@@ -9,7 +9,7 @@ class EventDirectory(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(parent)
 
-        self.event_frame = ctk.CTkScrollableFrame(self, width=800, height=425)
+        self.event_frame = ctk.CTkScrollableFrame(self, width=811, height=425)
         self.event_frame.grid(row=0, column=0, padx=20, pady=(20, 10))
 
         self.get_events()
@@ -59,8 +59,15 @@ class EventDirectory(ctk.CTkFrame):
 
         position_id = 0
 
+        max_width = 0
+
         for event_name, event_values in event_dict.items():
-            entry = ctk.CTkOptionMenu(self.event_frame, values=event_values)
+            width = ctk.CTkOptionMenu(self.event_frame, values=event_values).winfo_reqwidth()
+            if width > max_width:
+                max_width = width
+
+        for event_name, event_values in event_dict.items():
+            entry = ctk.CTkOptionMenu(self.event_frame, values=event_values, width=max_width)
             row = position_id // 3
             column = position_id % 3
             entry.grid(row=row, column=column, padx=20, pady=(20, 10))

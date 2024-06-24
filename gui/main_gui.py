@@ -19,6 +19,7 @@ class MainGUI(ctk.CTk):
         self.geometry(SCREEN_SIZE)
         self.title("College Event Score System")
         self.iconbitmap("assets/images/logo.ico")
+        self.resizable(False, False)
 
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
@@ -55,7 +56,7 @@ class MainGUI(ctk.CTk):
         self.scaling_label = ctk.CTkLabel(self.navigation_frame, text="UI Scaling:", font=header, anchor="w")
         self.scaling_label.grid(row=7, column=0, padx=20, pady=(10, 0))
         self.scaling = ctk.CTkOptionMenu(self.navigation_frame, font=header,
-                                         values=["80%", "90%", "100%", "110%", "120%"], command=change_scaling_event)
+                                         values=["80%", "90%", "100%", "110%", "120%"], command=self.change_scaling_event)
         self.scaling.grid(row=8, column=0, padx=20, pady=(10, 20), sticky="s")
 
         self.score_entry = ScoreEntry(self)
@@ -68,6 +69,9 @@ class MainGUI(ctk.CTk):
         self.select_page("score_entry")
         self.appearance.set("Light")
         self.scaling.set("100%")
+
+    def change_scaling_event(self, values):
+        change_scaling_event(values, self)
 
     def select_page(self, name):
         if name == "score_entry":
@@ -106,7 +110,7 @@ class MainGUI(ctk.CTk):
     def event_directory_button_event(self):
         self.select_page("event_directory")
         self.event_directory.get_events()
-        SCREEN_SIZE = f"{1100}x{500}"
+        SCREEN_SIZE = f"{1111}x{500}"
         self.screen_update(SCREEN_SIZE)
 
     def screen_update(self, SCREEN_SIZE):

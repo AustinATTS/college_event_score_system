@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Simplified looks" />
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="reqs">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/event_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/event_directory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/participant_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/participant_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/customisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/customisation.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,11 +57,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/austinatts/venv/1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AustinATTS/OneDrive/Documents/IT Work/Unit 4 - Programming/Part B &amp; C/college_event_score_system/data&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AustinATTS\OneDrive\Documents\IT Work\Unit 4 - Programming\Part B &amp; C\college_event_score_system\data" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="College Event Score System" />
@@ -341,7 +355,31 @@
       <option name="project" value="LOCAL" />
       <updated>1718914623437</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Simplified looks">
+      <option name="closed" value="true" />
+      <created>1718916639159</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1718916639159</updated>
+    </task>
+    <task id="LOCAL-00033" summary="exe">
+      <option name="closed" value="true" />
+      <created>1718916726644</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1718916726644</updated>
+    </task>
+    <task id="LOCAL-00034" summary="reqs">
+      <option name="closed" value="true" />
+      <created>1718916778180</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1718916778180</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,8 +395,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Finished Navigation (Added Logo Font)" />
-    <MESSAGE value="Updated score_entry and data_handler for correct data submission" />
     <MESSAGE value="Added all entry and combo boxes for score_entry.py" />
     <MESSAGE value="Created logo and banner and updated gui" />
     <MESSAGE value="Added COLOURS for light and dark modes" />
@@ -382,6 +418,8 @@
     <MESSAGE value="xml" />
     <MESSAGE value="Basic PEP8 Formating" />
     <MESSAGE value="Simplified looks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplified looks" />
+    <MESSAGE value="exe" />
+    <MESSAGE value="reqs" />
+    <option name="LAST_COMMIT_MESSAGE" value="reqs" />
   </component>
 </project>

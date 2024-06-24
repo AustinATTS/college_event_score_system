@@ -36,6 +36,12 @@ class ScoreBoard(ctk.CTkFrame):
         self.multiple_title = ctk.CTkLabel(self.multiple_events, text="ScoreBoard For Multiple Events")
         self.multiple_title.grid(row=0, column=0, padx=20, pady=(20, 10))
         scores = fetch_scores()
+        max_width = 0
+        for score in scores:
+            width = ctk.CTkOptionMenu(self.multiple_events, values=[f"{str(score[2])} - {score[3]}: {multiple_calculate_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25]))}"]).winfo_reqwidth()
+            if width > max_width:
+                max_width = width
+
         for score in scores:
             if score[1] == "Individual":
                 values = [f"{str(score[2])} - {score[3]}: {multiple_calculate_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25]))}",
@@ -44,7 +50,7 @@ class ScoreBoard(ctk.CTkFrame):
                           f"{score[17]} - {score[18]}; {str(score[19])}",
                           f"{score[20]} - {score[21]}; {str(score[22])}",
                           f"{score[23]} - {score[24]}; {str(score[25])}"]
-                entries = ctk.CTkOptionMenu(self.multiple_events, values=values)
+                entries = ctk.CTkOptionMenu(self.multiple_events, values=values, width=max_width)
                 position = 0
                 for i in range(20):
                     widgets = self.multiple_events.grid_slaves(row=(multiple_display_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25])) + position), column=0)
@@ -61,7 +67,7 @@ class ScoreBoard(ctk.CTkFrame):
                           f"{score[17]} - {score[18]}; {str(score[19])}",
                           f"{score[20]} - {score[21]}; {str(score[22])}",
                           f"{score[23]} - {score[24]}; {str(score[25])}"]
-                entries = ctk.CTkOptionMenu(self.multiple_events, values=values)
+                entries = ctk.CTkOptionMenu(self.multiple_events, values=values, width=max_width)
                 position = 0
                 for i in range(20):
                     widgets = self.multiple_events.grid_slaves(row=(multiple_display_score(int(score[13]), int(score[16]), int(score[19]), int(score[22]), int(score[25])) + position), column=0)
@@ -74,18 +80,23 @@ class ScoreBoard(ctk.CTkFrame):
 
         self.clear_scores_button = ctk.CTkButton(self.multiple_events, text="Delete",
                                                  command=self.multiple_clear_scores)
-        self.clear_scores_button.grid(row=1, column=1)
+        self.clear_scores_button.grid(row=0, column=1)
 
     def solo_update_scores(self):
         self.clear_frame(self.solo_events)
         self.solo_title = ctk.CTkLabel(self.solo_events, text="ScoreBoard For Solo Events")
         self.solo_title.grid(row=0, column=0, padx=20, pady=(20, 10))
         solo_scores = solo_fetch_scores()
+        max_width = 0
+        for solo_score in solo_scores:
+            width = ctk.CTkOptionMenu(self.solo_events, values=[f"{str(solo_score[2])} - {solo_score[3]}: {solo_calculate_score(int(solo_score[13]))}"]).winfo_reqwidth()
+            if width > max_width:
+                max_width = width
         for solo_score in solo_scores:
             if solo_score[1] == "Individual":
                 values = [f"{str(solo_score[2])} - {solo_score[3]}: {solo_calculate_score(int(solo_score[13]))}",
                           f"{solo_score[11]} - {solo_score[12]}; {str(solo_score[13])}"]
-                entries = ctk.CTkOptionMenu(self.solo_events, values=values)
+                entries = ctk.CTkOptionMenu(self.solo_events, values=values, width=max_width)
                 position = 0
                 for i in range(20):
                     widgets = self.solo_events.grid_slaves(row=(solo_display_score(int(solo_score[13])) + position), column=0)
@@ -98,7 +109,7 @@ class ScoreBoard(ctk.CTkFrame):
                 values = [f"{str(solo_score[4])} - {solo_score[5]}: {solo_calculate_score(int(solo_score[13]))}",
                           f"{solo_score[6]} - {solo_score[7]} - {solo_score[8]} - {solo_score[9]} - {solo_score[10]}",
                           f"{solo_score[11]} - {solo_score[12]}; {str(solo_score[13])}"]
-                entries = ctk.CTkOptionMenu(self.solo_events, values=values)
+                entries = ctk.CTkOptionMenu(self.solo_events, values=values, width=max_width)
                 position = 0
                 for i in range(20):
                     widgets = self.solo_events.grid_slaves(row=(solo_display_score(int(solo_score[13])) + position), column=0)
@@ -111,4 +122,4 @@ class ScoreBoard(ctk.CTkFrame):
                 print(f"Solo What the fuck have you done")
 
         self.solo_clear_Score_button = ctk.CTkButton(self.solo_events, text="Delete", command=self.solo_clear_scores)
-        self.solo_clear_Score_button.grid(row=1, column=1)
+        self.solo_clear_Score_button.grid(row=0, column=1)

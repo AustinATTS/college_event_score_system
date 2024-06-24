@@ -33,26 +33,30 @@ class ParticipantHandler:
 
         print(f"{team_count} - {individual_count}")
 
-        if team_count >= 4:
+        if team_count >=4 and individual_count >= 20:
+            self.show_notice("There is way too much data here pal")
+            return False
+
+        elif team_count >= 4:
             self.show_notice("You have entered the max amount of teams")
             return False
 
-        if individual_count >= 20:
+        elif individual_count >= 20:
             self.show_notice("You have entered the max amount of individuals")
             return False
 
         return True
 
     def show_notice(self, message):
-        print("Showing notice:", message)
         message_box = ctk.CTkToplevel()
         message_box.title("Notice")
-        message_box.geometry(f"{400}x{200}")
+        message_box.geometry(f"{275}x{125}")
+        message_box.iconbitmap("assets/images/logo.ico")
         message_box.resizable(False, False)
         notice = ctk.CTkLabel(message_box, text=message)
-        notice.grid(row=0, column=0, padx=20, pady=(20, 10))
+        notice.place(x=275/2, y=(125/2)-20, anchor="center")
         close_button = ctk.CTkButton(message_box, text="Close", command=message_box.destroy)
-        close_button.grid(row=1, column=0, padx=20, pady=(10, 20))
+        close_button.place(x=275/2, y=(125/2)+20, anchor="center")
 
     def add_team(self, team_id, team_name, team_member_one, team_member_two, team_member_three, team_member_four, team_member_five):
         teams.append(f"{team_id} - {team_name} : {team_member_one}, {team_member_two}, {team_member_three}, {team_member_four}, {team_member_five}")
