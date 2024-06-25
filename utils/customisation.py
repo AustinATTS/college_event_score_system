@@ -9,6 +9,7 @@ def change_scaling_event(new_scaling: str):
     try:
         new_scaling_float = int(new_scaling.replace("%", "")) / 100
         ctk.set_widget_scaling(new_scaling_float)
+        ctk.set_window_scaling(new_scaling_float)
     except _tkinter.TclError as e:
         print(f"Error changing scaling: {e}")
     except ValueError as e:

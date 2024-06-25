@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="db">
+    <list default="true" id="473e260f-40ab-4eee-96d7-7a6de545d348" name="Changes" comment="Kinda fixed scale issues (looks glitchy) and added error handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/event_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/event_directory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/score_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/score_board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/customisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/customisation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -393,7 +390,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719210701632</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Kinda fixed scale issues (looks glitchy) and added error handling">
+      <option name="closed" value="true" />
+      <created>1719263477616</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263477616</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -409,7 +414,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added COLOURS for light and dark modes" />
     <MESSAGE value="more COLOUR additions" />
     <MESSAGE value="Updated fonts for score_entry.py&#10;Added screen updating functions for different participant types" />
     <MESSAGE value="updated submit_score function for pep8" />
@@ -434,6 +438,7 @@
     <MESSAGE value="reqs" />
     <MESSAGE value="scale issues" />
     <MESSAGE value="db" />
-    <option name="LAST_COMMIT_MESSAGE" value="db" />
+    <MESSAGE value="Kinda fixed scale issues (looks glitchy) and added error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kinda fixed scale issues (looks glitchy) and added error handling" />
   </component>
 </project>
